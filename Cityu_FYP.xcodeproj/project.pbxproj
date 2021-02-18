@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A2A68EB25D2843A001FC74F /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A68EA25D28439001FC74F /* util.swift */; };
+		3A8C1F2C25C5415600DFCE97 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F2B25C5415600DFCE97 /* background.png */; };
+		3A8C1F2E25C543B600DFCE97 /* logo_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F2D25C543B600DFCE97 /* logo_1x.png */; };
+		3A8C1F3025C546FC00DFCE97 /* logo_1x_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F2F25C546FC00DFCE97 /* logo_1x_2.png */; };
+		3A8C1F3225C5470100DFCE97 /* backgorund_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F3125C5470000DFCE97 /* backgorund_1.png */; };
+		3A8C1F3625C54AA300DFCE97 /* login_register_button_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F3525C54AA300DFCE97 /* login_register_button_background.png */; };
+		3A8C1F3825C5506200DFCE97 /* textfield_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F3725C5506200DFCE97 /* textfield_bg.png */; };
+		3A8C1F3C25C56D2F00DFCE97 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C1F3B25C56D2F00DFCE97 /* LoginPageViewController.swift */; };
+		3A8C1F3F25C56EE400DFCE97 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C1F3E25C56EE400DFCE97 /* RegisterViewController.swift */; };
+		3A8C1F4125C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F4025C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg */; };
+		3AADB6B825BB437E0044850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6B725BB437E0044850C /* AppDelegate.swift */; };
+		3AADB6BA25BB437E0044850C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6B925BB437E0044850C /* SceneDelegate.swift */; };
+		3AADB6BC25BB437E0044850C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6BB25BB437E0044850C /* ViewController.swift */; };
+		3AADB6BF25BB437E0044850C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AADB6BD25BB437E0044850C /* Main.storyboard */; };
+		3AADB6C225BB437E0044850C /* Cityu_FYP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6C025BB437E0044850C /* Cityu_FYP.xcdatamodeld */; };
+		3AADB6C425BB43800044850C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AADB6C325BB43800044850C /* Assets.xcassets */; };
+		3AADB6C725BB43800044850C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AADB6C525BB43800044850C /* LaunchScreen.storyboard */; };
+		3AE9F1AB25DC10E400E7670E /* ScrollableHikingRouteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE9F1AA25DC10E300E7670E /* ScrollableHikingRouteDetailViewController.swift */; };
+		3AE9F1AD25DD036B00E7670E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE9F1AC25DD036B00E7670E /* ViewController2.swift */; };
+		3AE9F1AF25DD1A7500E7670E /* HikingTourListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE9F1AE25DD1A7500E7670E /* HikingTourListViewController.swift */; };
+		3AE9F1B125DD1BAE00E7670E /* HikingTourItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE9F1B025DD1BAE00E7670E /* HikingTourItemCell.swift */; };
+		3AE9F1B325DD58B500E7670E /* HikingTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE9F1B225DD58B500E7670E /* HikingTour.swift */; };
+		3AF17C6825D3B7DD0027A70D /* HikingRoutesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C6725D3B7DD0027A70D /* HikingRoutesListViewController.swift */; };
+		3AF17C6A25D5B7A20027A70D /* ServerResponseDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C6925D5B7A20027A70D /* ServerResponseDefinition.swift */; };
+		3AF17C6D25D5B7F30027A70D /* HikingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C6C25D5B7F30027A70D /* HikingRoute.swift */; };
+		3AF17C6F25D64BAB0027A70D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C6E25D64BAB0027A70D /* User.swift */; };
+		3AF17C7225D64C890027A70D /* HikingRouteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C7125D64C890027A70D /* HikingRouteItemCell.swift */; };
+		3AF17C7625D812C90027A70D /* HikingRouteDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C7525D812C90027A70D /* HikingRouteDetailController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A2A68EA25D28439001FC74F /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
+		3A8C1F2B25C5415600DFCE97 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		3A8C1F2D25C543B600DFCE97 /* logo_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_1x.png; sourceTree = "<group>"; };
+		3A8C1F2F25C546FC00DFCE97 /* logo_1x_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_1x_2.png; sourceTree = "<group>"; };
+		3A8C1F3125C5470000DFCE97 /* backgorund_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgorund_1.png; sourceTree = "<group>"; };
+		3A8C1F3525C54AA300DFCE97 /* login_register_button_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_register_button_background.png; sourceTree = "<group>"; };
+		3A8C1F3725C5506200DFCE97 /* textfield_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield_bg.png; sourceTree = "<group>"; };
+		3A8C1F3B25C56D2F00DFCE97 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		3A8C1F3E25C56EE400DFCE97 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3A8C1F4025C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg"; sourceTree = "<group>"; };
+		3AADB6B425BB437E0044850C /* Cityu_FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cityu_FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AADB6B725BB437E0044850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AADB6B925BB437E0044850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3AADB6BB25BB437E0044850C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AADB6BE25BB437E0044850C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AADB6C125BB437E0044850C /* Cityu_FYP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cityu_FYP.xcdatamodel; sourceTree = "<group>"; };
+		3AADB6C325BB43800044850C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AADB6C625BB43800044850C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AADB6C825BB43800044850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AE9F1AA25DC10E300E7670E /* ScrollableHikingRouteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableHikingRouteDetailViewController.swift; sourceTree = "<group>"; };
+		3AE9F1AC25DD036B00E7670E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		3AE9F1AE25DD1A7500E7670E /* HikingTourListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingTourListViewController.swift; sourceTree = "<group>"; };
+		3AE9F1B025DD1BAE00E7670E /* HikingTourItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingTourItemCell.swift; sourceTree = "<group>"; };
+		3AE9F1B225DD58B500E7670E /* HikingTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingTour.swift; sourceTree = "<group>"; };
+		3AF17C6725D3B7DD0027A70D /* HikingRoutesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingRoutesListViewController.swift; sourceTree = "<group>"; };
+		3AF17C6925D5B7A20027A70D /* ServerResponseDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponseDefinition.swift; sourceTree = "<group>"; };
+		3AF17C6C25D5B7F30027A70D /* HikingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingRoute.swift; sourceTree = "<group>"; };
+		3AF17C6E25D64BAB0027A70D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3AF17C7125D64C890027A70D /* HikingRouteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingRouteItemCell.swift; sourceTree = "<group>"; };
+		3AF17C7525D812C90027A70D /* HikingRouteDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingRouteDetailController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AADB6B125BB437E0044850C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A8C1F2A25C5411900DFCE97 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C1F2B25C5415600DFCE97 /* background.png */,
+				3A8C1F2D25C543B600DFCE97 /* logo_1x.png */,
+				3A8C1F3125C5470000DFCE97 /* backgorund_1.png */,
+				3A8C1F3725C5506200DFCE97 /* textfield_bg.png */,
+				3A8C1F4025C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg */,
+				3A8C1F3525C54AA300DFCE97 /* login_register_button_background.png */,
+				3A8C1F2F25C546FC00DFCE97 /* logo_1x_2.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		3A8C1F3D25C56E8700DFCE97 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3AADB6BB25BB437E0044850C /* ViewController.swift */,
+				3AE9F1AC25DD036B00E7670E /* ViewController2.swift */,
+				3A8C1F3B25C56D2F00DFCE97 /* LoginPageViewController.swift */,
+				3A8C1F3E25C56EE400DFCE97 /* RegisterViewController.swift */,
+				3AF17C6725D3B7DD0027A70D /* HikingRoutesListViewController.swift */,
+				3AF17C7525D812C90027A70D /* HikingRouteDetailController.swift */,
+				3AE9F1AA25DC10E300E7670E /* ScrollableHikingRouteDetailViewController.swift */,
+				3AE9F1AE25DD1A7500E7670E /* HikingTourListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3AADB6AB25BB437E0044850C = {
+			isa = PBXGroup;
+			children = (
+				3AADB6B625BB437E0044850C /* Cityu_FYP */,
+				3AADB6B525BB437E0044850C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AADB6B525BB437E0044850C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AADB6B425BB437E0044850C /* Cityu_FYP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AADB6B625BB437E0044850C /* Cityu_FYP */ = {
+			isa = PBXGroup;
+			children = (
+				3AF17C7025D64C6C0027A70D /* TableViewCell */,
+				3AF17C6B25D5B7E20027A70D /* Model */,
+				3A8C1F3D25C56E8700DFCE97 /* ViewController */,
+				3A8C1F2A25C5411900DFCE97 /* images */,
+				3AADB6B725BB437E0044850C /* AppDelegate.swift */,
+				3AADB6B925BB437E0044850C /* SceneDelegate.swift */,
+				3AADB6BD25BB437E0044850C /* Main.storyboard */,
+				3AADB6C325BB43800044850C /* Assets.xcassets */,
+				3AADB6C525BB43800044850C /* LaunchScreen.storyboard */,
+				3AADB6C825BB43800044850C /* Info.plist */,
+				3AADB6C025BB437E0044850C /* Cityu_FYP.xcdatamodeld */,
+				3A2A68EA25D28439001FC74F /* util.swift */,
+			);
+			path = Cityu_FYP;
+			sourceTree = "<group>";
+		};
+		3AF17C6B25D5B7E20027A70D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AF17C6C25D5B7F30027A70D /* HikingRoute.swift */,
+				3AE9F1B225DD58B500E7670E /* HikingTour.swift */,
+				3AF17C6E25D64BAB0027A70D /* User.swift */,
+				3AF17C6925D5B7A20027A70D /* ServerResponseDefinition.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AF17C7025D64C6C0027A70D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3AF17C7125D64C890027A70D /* HikingRouteItemCell.swift */,
+				3AE9F1B025DD1BAE00E7670E /* HikingTourItemCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AADB6B325BB437E0044850C /* Cityu_FYP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AADB6CB25BB43800044850C /* Build configuration list for PBXNativeTarget "Cityu_FYP" */;
+			buildPhases = (
+				3AADB6B025BB437E0044850C /* Sources */,
+				3AADB6B125BB437E0044850C /* Frameworks */,
+				3AADB6B225BB437E0044850C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cityu_FYP;
+			productName = Cityu_FYP;
+			productReference = 3AADB6B425BB437E0044850C /* Cityu_FYP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AADB6AC25BB437E0044850C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Kam;
+				TargetAttributes = {
+					3AADB6B325BB437E0044850C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3AADB6AF25BB437E0044850C /* Build configuration list for PBXProject "Cityu_FYP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AADB6AB25BB437E0044850C;
+			productRefGroup = 3AADB6B525BB437E0044850C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AADB6B325BB437E0044850C /* Cityu_FYP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AADB6B225BB437E0044850C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8C1F3025C546FC00DFCE97 /* logo_1x_2.png in Resources */,
+				3AADB6C725BB43800044850C /* LaunchScreen.storyboard in Resources */,
+				3A8C1F2C25C5415600DFCE97 /* background.png in Resources */,
+				3A8C1F4125C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg in Resources */,
+				3A8C1F2E25C543B600DFCE97 /* logo_1x.png in Resources */,
+				3A8C1F3825C5506200DFCE97 /* textfield_bg.png in Resources */,
+				3AADB6C425BB43800044850C /* Assets.xcassets in Resources */,
+				3AADB6BF25BB437E0044850C /* Main.storyboard in Resources */,
+				3A8C1F3625C54AA300DFCE97 /* login_register_button_background.png in Resources */,
+				3A8C1F3225C5470100DFCE97 /* backgorund_1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AADB6B025BB437E0044850C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8C1F3C25C56D2F00DFCE97 /* LoginPageViewController.swift in Sources */,
+				3AE9F1B325DD58B500E7670E /* HikingTour.swift in Sources */,
+				3AADB6BC25BB437E0044850C /* ViewController.swift in Sources */,
+				3AF17C7625D812C90027A70D /* HikingRouteDetailController.swift in Sources */,
+				3AF17C6A25D5B7A20027A70D /* ServerResponseDefinition.swift in Sources */,
+				3AADB6B825BB437E0044850C /* AppDelegate.swift in Sources */,
+				3AE9F1AD25DD036B00E7670E /* ViewController2.swift in Sources */,
+				3A8C1F3F25C56EE400DFCE97 /* RegisterViewController.swift in Sources */,
+				3A2A68EB25D2843A001FC74F /* util.swift in Sources */,
+				3AE9F1B125DD1BAE00E7670E /* HikingTourItemCell.swift in Sources */,
+				3AADB6C225BB437E0044850C /* Cityu_FYP.xcdatamodeld in Sources */,
+				3AF17C6D25D5B7F30027A70D /* HikingRoute.swift in Sources */,
+				3AF17C7225D64C890027A70D /* HikingRouteItemCell.swift in Sources */,
+				3AF17C6825D3B7DD0027A70D /* HikingRoutesListViewController.swift in Sources */,
+				3AE9F1AF25DD1A7500E7670E /* HikingTourListViewController.swift in Sources */,
+				3AADB6BA25BB437E0044850C /* SceneDelegate.swift in Sources */,
+				3AE9F1AB25DC10E400E7670E /* ScrollableHikingRouteDetailViewController.swift in Sources */,
+				3AF17C6F25D64BAB0027A70D /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3AADB6BD25BB437E0044850C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AADB6BE25BB437E0044850C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3AADB6C525BB43800044850C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AADB6C625BB43800044850C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AADB6C925BB43800044850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AADB6CA25BB43800044850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AADB6CC25BB43800044850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W74F5YLW38;
+				INFOPLIST_FILE = Cityu_FYP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Cityu-FYP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AADB6CD25BB43800044850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W74F5YLW38;
+				INFOPLIST_FILE = Cityu_FYP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Cityu-FYP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AADB6AF25BB437E0044850C /* Build configuration list for PBXProject "Cityu_FYP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AADB6C925BB43800044850C /* Debug */,
+				3AADB6CA25BB43800044850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AADB6CB25BB43800044850C /* Build configuration list for PBXNativeTarget "Cityu_FYP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AADB6CC25BB43800044850C /* Debug */,
+				3AADB6CD25BB43800044850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3AADB6C025BB437E0044850C /* Cityu_FYP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3AADB6C125BB437E0044850C /* Cityu_FYP.xcdatamodel */,
+			);
+			currentVersion = 3AADB6C125BB437E0044850C /* Cityu_FYP.xcdatamodel */;
+			path = Cityu_FYP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3AADB6AC25BB437E0044850C /* Project object */;
+}
