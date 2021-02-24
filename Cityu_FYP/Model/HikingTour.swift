@@ -24,4 +24,5 @@ struct HikingTour: Codable {
     var deletedat: String?
     var hikingrouteimage: String
     var hikingroutename: String
+    var hostname: String
 }

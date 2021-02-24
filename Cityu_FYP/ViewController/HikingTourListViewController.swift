@@ -30,6 +30,21 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "GoToHikingTourDetail", sender: self)
+    }
+    
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToHikingTourDetail" {
+            if let indexPath = self.hikingTourTableView.indexPathForSelectedRow {
+                let destinationVC = segue.destination as! HikingTourDetailsViewController
+                destinationVC.hikingTourDetail = hikingTours[indexPath.row]
+            }
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hikingTourTableView.delegate = self

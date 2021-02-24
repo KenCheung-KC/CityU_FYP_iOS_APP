@@ -74,15 +74,6 @@ class ScrollableHikingRouteDetailViewController: UIViewController, MKMapViewDele
             let rect = route.polyline.boundingMapRect
             self.mapview.setRegion(MKCoordinateRegion(rect), animated: true)
         }
-        
-        hikingRouteDetailScrollview.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height + 1000)
-        
-//        let height = hikingRouteDescriptionLabel.bounds.size.height
-        let height = hikingRouteDescriptionLabel.intrinsicContentSize
-//        let height = hikingRouteDescriptionTextView.intrinsicContentSize
-        print("aaaa height: \(height)")
-        
-//        hikingRouteDetailScrollView.contentSize = CGSize(width: self.view.frame.width, height: self.view.frame.height + 100)
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
