@@ -199,14 +199,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="340"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Aberdeen Reservoir" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="87D-Gt-39Q">
-                                                    <rect key="frame" x="15" y="171" width="341" height="45"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <color key="textColor" red="0.0" green="0.396078431372549" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difficulty: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMh-JE-WPB">
                                                     <rect key="frame" x="23" y="216" width="78" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -252,6 +244,13 @@
                                                     <rect key="frame" x="15" y="15" width="340" height="152"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piy-lV-k8U">
+                                                    <rect key="frame" x="23" y="179" width="324" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <color key="textColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
@@ -259,7 +258,7 @@
                                             <outlet property="hikingRouteDescription" destination="qAn-YH-Klm" id="5GI-ow-RJv"/>
                                             <outlet property="hikingRouteDifficulty" destination="lMh-JE-WPB" id="FIq-Hg-MZp"/>
                                             <outlet property="hikingRouteImage" destination="yFZ-NC-KCu" id="lS4-Ok-ZsO"/>
-                                            <outlet property="hikingRouteName" destination="87D-Gt-39Q" id="kVp-U8-KKT"/>
+                                            <outlet property="hikingRouteNameLabel" destination="piy-lV-k8U" id="MQU-ad-zy5"/>
                                             <outlet property="ratingStarContainerView" destination="sLi-Qe-1WG" id="XhF-1m-Tlk"/>
                                         </connections>
                                     </tableViewCell>

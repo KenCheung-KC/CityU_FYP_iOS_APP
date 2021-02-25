@@ -11,9 +11,9 @@ import UIKit
 class HikingRouteItemCell: UITableViewCell {
     
     @IBOutlet weak var hikingRouteImage: UIImageView!
-    @IBOutlet weak var hikingRouteName: UITextView!
     @IBOutlet weak var hikingRouteDifficulty: UILabel!
     @IBOutlet weak var hikingRouteDescription: UILabel!
     @IBOutlet weak var ratingStarContainerView: UIView!
+    @IBOutlet weak var hikingRouteNameLabel: UILabel!
     
 }

@@ -32,7 +32,7 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "hikingRouteItemCell", for: indexPath) as! HikingRouteItemCell
         
-        cell.hikingRouteName.text = hikingRoutes[indexPath.row].name
+        cell.hikingRouteNameLabel.text = hikingRoutes[indexPath.row].name
         cell.hikingRouteDescription.text = hikingRoutes[indexPath.row].description
 
         let rating = hikingRoutes[indexPath.row].stars
