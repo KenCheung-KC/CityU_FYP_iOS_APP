@@ -614,7 +614,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUS-bV-zb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3058" y="-1498"/>
+            <point key="canvasLocation" x="3708" y="-1498"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1001,11 +1001,12 @@
                         <outlet property="hikingTourMaximumParticipantLabel" destination="DSB-81-dTb" id="yg7-Di-QNf"/>
                         <outlet property="hikingTourMinimumParticipantLabel" destination="tyE-VF-F6u" id="9lb-GA-ncB"/>
                         <outlet property="hikingTourNameLabel" destination="USX-XZ-zkh" id="yur-0s-K51"/>
+                        <segue destination="3ma-da-Ffa" kind="show" identifier="GoToHikingRouteDetailFromHikingTour" id="gFo-kB-d6i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ahb-MW-fkU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3057" y="-814"/>
+            <point key="canvasLocation" x="2886" y="-814"/>
         </scene>
         <!--Recommendation-->
         <scene sceneID="DF8-24-bLf">
@@ -1106,4 +1107,7 @@
         <image name="star" width="512" height="512"/>
         <image name="textfield_bg.png" width="392" height="84"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gFo-kB-d6i"/>
+    </inferredMetricsTieBreakers>
 </document>

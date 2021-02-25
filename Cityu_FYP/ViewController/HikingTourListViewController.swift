@@ -63,7 +63,7 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
         let task = URLSession.shared.dataTask(with: request){
                     (data, response, err) in
                     do {
-                        let responseFromServer = try JSONDecoder().decode(HikingTourResponse.self, from: data!)
+                        let responseFromServer = try JSONDecoder().decode(HikingToursResponse.self, from: data!)
                         print("hiking tours response from server: \(responseFromServer)")
                         let hikingToursFromServer = responseFromServer.hikingTours
                         

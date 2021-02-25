@@ -16,10 +16,21 @@ struct LoginResponse: Codable {
 
 struct HikingRouteResponse: Codable {
     var message: String
+    var hikingRoute: HikingRoute
+}
+
+struct HikingRoutesResponse: Codable {
+    var message: String
     var hikingRoutes: [HikingRoute]
 }
 
 struct HikingTourResponse: Codable {
     var message: String
+    var hikingTours: HikingTour
+}
+
+struct HikingToursResponse: Codable {
+    var message: String
     var hikingTours: [HikingTour]
 }
+

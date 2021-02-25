@@ -82,7 +82,7 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
         let task = URLSession.shared.dataTask(with: request){
             (data, response, err) in
             do {
-                let responseFromServer = try JSONDecoder().decode(HikingRouteResponse.self, from: data!)
+                let responseFromServer = try JSONDecoder().decode(HikingRoutesResponse.self, from: data!)
                 print("hiking routes response from server: \(responseFromServer)")
 //                let message = responseFromServer.message
 //                print("message in hiking route: \(message)")

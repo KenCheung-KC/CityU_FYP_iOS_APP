@@ -11,7 +11,7 @@ import UIKit
 class HikingTourDetailsViewController: UIViewController {
 
     var hikingTourDetail: HikingTour?
-    
+    var hikingRouteDetail: HikingRoute?
     
     @IBOutlet weak var hikingTourNameLabel: UILabel!
     @IBOutlet weak var hikingTourDateAndTimeLabel: UILabel!
@@ -21,11 +21,8 @@ class HikingTourDetailsViewController: UIViewController {
     @IBOutlet weak var hikingRouteButton: UIButton!
     @IBOutlet weak var hikingTourDescriptionLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hikingTourDetail: \(hikingTourDetail)")
-        
         hikingTourNameLabel.text = hikingTourDetail?.tourname
         hikingTourHostNameLabel.text = hikingTourDetail?.hostname
         hikingTourMinimumParticipantLabel.text = String(hikingTourDetail!.minimumparticipant)
@@ -35,19 +32,34 @@ class HikingTourDetailsViewController: UIViewController {
     }
     
     @IBAction func hikingRouteButtonOnTap(_ sender: Any) {
-        print("Button clicked")
+        let url = URL(string: "\(baseUrl)/hikingRoute/hikingRouteList/\(hikingTourDetail!.hikingrouteid)")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        request.setValue(JWT_token!, forHTTPHeaderField: "Authorization")
+        
+        let task = URLSession.shared.dataTask(with: request){
+            (data, response, error) in
+            
+            do {
+                let responseFromServer = try JSONDecoder().decode(HikingRouteResponse.self, from: data!)
+                self.hikingRouteDetail = responseFromServer.hikingRoute
+                
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "GoToHikingRouteDetailFromHikingTour", sender: self)
+                }
+                
+            } catch let err {
+                print("err: \(err)")
+            }
+        }
+        
+        task.resume()
     }
     
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "GoToHikingRouteDetailFromHikingTour" {
+            let destinationVC = segue.destination as! ScrollableHikingRouteDetailViewController
+            destinationVC.hikingRouteDetail = hikingRouteDetail
+        }
     }
-    */
-
 }
