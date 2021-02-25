@@ -397,15 +397,6 @@
                                                     <constraint firstAttribute="height" constant="235" id="V6z-9y-Y6w"/>
                                                 </constraints>
                                             </mapView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Aberdeen Reservoir" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h9G-6c-dUW">
-                                                <rect key="frame" x="15" y="250" width="345" height="45"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="45" id="H3s-Nj-g1Q"/>
-                                                </constraints>
-                                                <color key="textColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-AJ-Vbp">
                                                 <rect key="frame" x="15" y="295" width="345" height="50"/>
                                                 <subviews>
@@ -553,6 +544,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOH-oC-oX5">
+                                                <rect key="frame" x="15" y="252" width="345" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <color key="textColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -560,31 +557,29 @@
                                             <constraint firstItem="yHE-Ho-Oi1" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" id="11q-3f-si8"/>
                                             <constraint firstAttribute="trailing" secondItem="XDb-lm-Orz" secondAttribute="trailing" constant="15" id="3Kf-V7-lvk"/>
                                             <constraint firstItem="Mf3-ur-kEh" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="5Jj-9f-U8y"/>
-                                            <constraint firstItem="h9G-6c-dUW" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="5PE-VR-R4o"/>
                                             <constraint firstAttribute="width" constant="375" id="BOL-bl-1zb"/>
                                             <constraint firstItem="bhi-AJ-Vbp" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="EKV-Vf-KRh"/>
-                                            <constraint firstAttribute="trailing" secondItem="h9G-6c-dUW" secondAttribute="trailing" constant="15" id="KjG-BP-oSQ"/>
                                             <constraint firstItem="gL2-aH-lmH" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="M1E-zI-GKV"/>
+                                            <constraint firstItem="bhi-AJ-Vbp" firstAttribute="top" secondItem="DOH-oC-oX5" secondAttribute="bottom" constant="14" id="OFQ-w3-JOq"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Mf3-ur-kEh" secondAttribute="bottom" constant="20" id="OhN-5b-tUH"/>
                                             <constraint firstAttribute="trailing" secondItem="bhi-AJ-Vbp" secondAttribute="trailing" constant="15" id="PYD-yp-ise"/>
                                             <constraint firstItem="Uej-Qd-VVS" firstAttribute="top" secondItem="XDb-lm-Orz" secondAttribute="bottom" id="Qwz-VX-gX8"/>
                                             <constraint firstAttribute="trailing" secondItem="gL2-aH-lmH" secondAttribute="trailing" constant="15" id="TMo-vG-fQn"/>
                                             <constraint firstAttribute="trailing" secondItem="yHE-Ho-Oi1" secondAttribute="trailing" id="UAU-xE-G0P"/>
                                             <constraint firstItem="ump-Br-fS6" firstAttribute="top" secondItem="gL2-aH-lmH" secondAttribute="bottom" id="V62-Fr-Ocn"/>
-                                            <constraint firstItem="h9G-6c-dUW" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="Z3g-6f-Kb2"/>
-                                            <constraint firstAttribute="trailing" secondItem="h9G-6c-dUW" secondAttribute="trailing" constant="15" id="aBy-dq-Ye6"/>
                                             <constraint firstAttribute="trailing" secondItem="Uej-Qd-VVS" secondAttribute="trailing" constant="15" id="b9T-uc-vny"/>
                                             <constraint firstItem="Mf3-ur-kEh" firstAttribute="top" secondItem="Uej-Qd-VVS" secondAttribute="bottom" constant="15" id="fW8-VC-3Az"/>
                                             <constraint firstAttribute="height" priority="250" constant="667" id="iup-Dt-ld5"/>
-                                            <constraint firstItem="bhi-AJ-Vbp" firstAttribute="top" secondItem="h9G-6c-dUW" secondAttribute="bottom" id="j8k-ML-biO"/>
+                                            <constraint firstItem="DOH-oC-oX5" firstAttribute="leading" secondItem="bhi-AJ-Vbp" secondAttribute="leading" id="jMk-mL-hmE"/>
                                             <constraint firstItem="Uej-Qd-VVS" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="kpd-BQ-ca7"/>
                                             <constraint firstItem="yHE-Ho-Oi1" firstAttribute="top" secondItem="Ftk-x3-94q" secondAttribute="top" id="lXf-x1-2ZS"/>
                                             <constraint firstItem="ump-Br-fS6" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="mf4-f0-Wv5"/>
-                                            <constraint firstItem="h9G-6c-dUW" firstAttribute="top" secondItem="yHE-Ho-Oi1" secondAttribute="bottom" constant="15" id="oNx-KH-R9d"/>
                                             <constraint firstItem="XDb-lm-Orz" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="ocJ-Gi-g9b"/>
                                             <constraint firstAttribute="trailing" secondItem="ump-Br-fS6" secondAttribute="trailing" constant="15" id="oys-ex-RSc"/>
                                             <constraint firstItem="gL2-aH-lmH" firstAttribute="top" secondItem="bhi-AJ-Vbp" secondAttribute="bottom" id="tVi-cT-ufQ"/>
+                                            <constraint firstItem="DOH-oC-oX5" firstAttribute="top" secondItem="yHE-Ho-Oi1" secondAttribute="bottom" constant="17" id="tWe-ip-lJW"/>
                                             <constraint firstItem="XDb-lm-Orz" firstAttribute="top" secondItem="ump-Br-fS6" secondAttribute="bottom" id="v0y-9Y-Fzr"/>
+                                            <constraint firstItem="DOH-oC-oX5" firstAttribute="trailing" secondItem="bhi-AJ-Vbp" secondAttribute="trailing" id="vJ9-db-VYj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -611,7 +606,7 @@
                         <outlet property="estimatedDurationLabel" destination="qcr-Cs-pqX" id="4Yw-6K-N7S"/>
                         <outlet property="hikingRouteDescriptionLabel" destination="Mf3-ur-kEh" id="yq8-i5-YtC"/>
                         <outlet property="hikingRouteDetailScrollview" destination="4DV-MA-AAY" id="bT1-Pz-5N9"/>
-                        <outlet property="hikingRouteName" destination="h9G-6c-dUW" id="CUp-Tc-u5Z"/>
+                        <outlet property="hikingRouteNameLabel" destination="DOH-oC-oX5" id="OHc-ff-O2g"/>
                         <outlet property="locationLabel" destination="nqO-Rk-l08" id="obj-wp-dfp"/>
                         <outlet property="mapview" destination="yHE-Ho-Oi1" id="hEu-Dz-D7c"/>
                         <outlet property="ratingStarsContainer" destination="jLs-Pc-zaT" id="XJW-vX-fBm"/>
@@ -826,13 +821,19 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mOx-MY-jWR" userLabel="Tourname Stack View">
                                                 <rect key="frame" x="15" y="10" width="345" height="26.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USX-XZ-zkh">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USX-XZ-zkh">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="26.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                         <color key="textColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="USX-XZ-zkh" secondAttribute="trailing" id="0tZ-bR-bxs"/>
+                                                    <constraint firstItem="USX-XZ-zkh" firstAttribute="top" secondItem="mOx-MY-jWR" secondAttribute="top" id="SuB-Sv-c4y"/>
+                                                    <constraint firstItem="USX-XZ-zkh" firstAttribute="leading" secondItem="mOx-MY-jWR" secondAttribute="leading" id="zTT-Lf-Gnb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="USX-XZ-zkh" secondAttribute="bottom" id="zZI-wQ-ceg"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="369-Vu-Vym" userLabel="Date and Time Stack View">
                                                 <rect key="frame" x="15" y="46.5" width="345" height="24"/>
@@ -911,7 +912,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-BE-qcX">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-BE-qcX">
                                                         <rect key="frame" x="147.5" y="0.0" width="197.5" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Aberdeen reservoir">

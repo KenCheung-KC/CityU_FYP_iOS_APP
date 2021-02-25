@@ -31,7 +31,7 @@ class HikingTourDetailsViewController: UIViewController {
         hikingTourMinimumParticipantLabel.text = String(hikingTourDetail!.minimumparticipant)
         hikingTourMaximumParticipantLabel.text = String(hikingTourDetail!.maximumparticipant)
         hikingTourDescriptionLabel.text = hikingTourDetail?.tourdescription
-        
+        hikingRouteButton.setTitle(hikingTourDetail?.hikingroutename, for: .normal)
     }
     
     @IBAction func hikingRouteButtonOnTap(_ sender: Any) {

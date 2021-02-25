@@ -14,7 +14,6 @@ class ScrollableHikingRouteDetailViewController: UIViewController, MKMapViewDele
     var hikingRouteDetail: HikingRoute?
     
     @IBOutlet weak var mapview: MKMapView!
-    @IBOutlet weak var hikingRouteName: UITextView!
     @IBOutlet weak var ratingStarsContainer: UIView!
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
@@ -22,7 +21,7 @@ class ScrollableHikingRouteDetailViewController: UIViewController, MKMapViewDele
     @IBOutlet weak var estimatedDurationLabel: UILabel!
     @IBOutlet weak var hikingRouteDescriptionLabel: UILabel!
     @IBOutlet weak var hikingRouteDetailScrollview: UIScrollView!
-    
+    @IBOutlet weak var hikingRouteNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,7 +86,7 @@ class ScrollableHikingRouteDetailViewController: UIViewController, MKMapViewDele
     func mapHikingRouteDetailToUI() {
         if let details = hikingRouteDetail {
             let name = details.name
-            hikingRouteName.text = name
+            hikingRouteNameLabel.text = name
             let location = details.location
             locationLabel.text = location
             let distance = details.distance
@@ -99,9 +98,6 @@ class ScrollableHikingRouteDetailViewController: UIViewController, MKMapViewDele
             let estimatedDuration = details.estimatedduration
             estimatedDurationLabel.text = "\(estimatedDuration) minutes"
         }
-//        let fixedWidth = hikingRouteDescriptionTextView.frame.size.width
-//        let newSize = hikingRouteDescriptionTextView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-//        hikingRouteDescriptionTextView.frame.size = CGSize(width: max(newSize.width, fixedWidth), height: newSize.height)
         
         if let rating = hikingRouteDetail?.stars {
             for n in 0...4 {
@@ -115,16 +111,4 @@ class ScrollableHikingRouteDetailViewController: UIViewController, MKMapViewDele
             }
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
