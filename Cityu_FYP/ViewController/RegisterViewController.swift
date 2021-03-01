@@ -17,13 +17,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("RegisterController view did load!")
     }
-    
-//    override func viewWillLayoutSubviews() {
-//        activityViewContainer = UIView(frame: self.view.bounds)
-//    }
-    
 
     @IBAction func signUp(_ sender: Any) {
         guard let username = usernameTextField.text else { return }

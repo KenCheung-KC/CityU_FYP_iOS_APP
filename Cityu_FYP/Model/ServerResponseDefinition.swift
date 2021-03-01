@@ -26,11 +26,15 @@ struct HikingRoutesResponse: Codable {
 
 struct HikingTourResponse: Codable {
     var message: String
-    var hikingTours: HikingTour
+    var hikingTour: HikingTour
 }
 
 struct HikingToursResponse: Codable {
     var message: String
     var hikingTours: [HikingTour]
+}
+
+struct JoinTourResponse: Codable {
+    var message: String
 }
 
