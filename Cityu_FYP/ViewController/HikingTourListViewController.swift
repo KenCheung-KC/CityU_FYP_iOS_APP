@@ -50,7 +50,6 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
         hikingTourTableView.delegate = self
         hikingTourTableView.dataSource = self
         getHikingTours()
-        print("hikingTours: \(hikingTours)")
     }
     
     func getHikingTours() {
@@ -64,11 +63,11 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
                     (data, response, err) in
                     do {
                         let responseFromServer = try JSONDecoder().decode(HikingToursResponse.self, from: data!)
-                        print("hiking tours response from server: \(responseFromServer)")
+//                        print("hiking tours response from server: \(responseFromServer)")
                         let hikingToursFromServer = responseFromServer.hikingTours
                         
                         for hikingTour in hikingToursFromServer {
-                            print("hikingTour: \(hikingTour)")
+//                            print("hikingTour: \(hikingTour)")
                             self.hikingTours.append(hikingTour)
                         }
                         

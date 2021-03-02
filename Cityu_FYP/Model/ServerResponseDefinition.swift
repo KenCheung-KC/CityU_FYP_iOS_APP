@@ -34,7 +34,12 @@ struct HikingToursResponse: Codable {
     var hikingTours: [HikingTour]
 }
 
-struct JoinTourResponse: Codable {
+struct JoinedToursResponse: Codable {
     var message: String
+//    var userJoinedTours: [HikingTour]
 }
 
+struct GetJoinedToursResponse: Codable {
+    var message: String
+    var userJoinedTours: [HikingTour]
+}

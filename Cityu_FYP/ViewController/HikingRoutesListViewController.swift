@@ -93,10 +93,6 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
                     self.hikingRoutes.append(hikingRoute)
                 }
                 
-//                DispatchQueue.main.asyncAfter(deadline: .now() + 10){
-//                    self.hikingRouteTableView.reloadData()
-//                    self.removeSpinner(vc: self)
-//                }
                 DispatchQueue.main.sync {
                     self.hikingRouteTableView.reloadData()
                     self.removeSpinner(vc: self)

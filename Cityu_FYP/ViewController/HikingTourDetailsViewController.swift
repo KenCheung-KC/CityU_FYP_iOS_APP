@@ -74,7 +74,7 @@ class HikingTourDetailsViewController: UIViewController {
             (data, response, error) in
             
             do {
-                let responseFromServer = try JSONDecoder().decode(JoinTourResponse.self, from: data!)
+                let responseFromServer = try JSONDecoder().decode(JoinedToursResponse.self, from: data!)
 //                print("join tour response: \(responseFromServer)")
                 let messageFromServer = responseFromServer.message
                 DispatchQueue.main.async {
@@ -84,7 +84,7 @@ class HikingTourDetailsViewController: UIViewController {
                     self.present(controller, animated: true, completion: nil)
                 }
             } catch let err {
-                print("err: \(err)")
+                print("err from hiking tour detail VC: \(err)")
             }
         }
         
@@ -98,27 +98,4 @@ class HikingTourDetailsViewController: UIViewController {
         }
     }
     
-    func getDateAndTime(ISOString: String) -> DateAndTime? {
-        print("ISOString: \(ISOString)")
-        let splitedISOString = ISOString.components(separatedBy: "T")
-        print(splitedISOString)
-        print(splitedISOString[1].dropLast(5))
-        let date1 = splitedISOString[0]
-        let time1 = String(splitedISOString[1].dropLast(5))
-        
-        let dateAndTime = DateAndTime(date: date1, time: (time1))
-        print("dateAndTime: \(dateAndTime)")
-
-        return dateAndTime
-    }
-}
-
-struct DateAndTime {
-    var date: String
-    var time: String
-    
-    init(date: String, time: String) {
-        self.date = date
-        self.time = time
-    }
 }
