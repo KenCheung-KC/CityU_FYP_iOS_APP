@@ -20,27 +20,57 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if(section == 0) {
+            return 2
+        } else {
+            return 1
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let joinedToursCell = tableView.dequeueReusableCell(withIdentifier: "JoinedToursCell", for: indexPath)
         let hostedToursCell = tableView.dequeueReusableCell(withIdentifier: "HostedToursCell", for: indexPath)
-//        print("indexPath: \(indexPath)")
-        if(indexPath.row == 0) {
-            return joinedToursCell
+        let myInformationCell = tableView.dequeueReusableCell(withIdentifier: "MyInformationCell", for: indexPath)
+        
+        if(indexPath.section == 0) {
+            if(indexPath.row == 0) {
+                return joinedToursCell
+            }
+                
+            return hostedToursCell
+        } else {
+            return myInformationCell
         }
         
-        return hostedToursCell
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(indexPath.row == 0) {
-            performSegue(withIdentifier: "GoToJoinedToursList", sender: self)
+        if(indexPath.section == 0) {
+            if(indexPath.row == 0) {
+                performSegue(withIdentifier: "GoToJoinedToursList", sender: self)
+            }
+        
+            if(indexPath.row == 1) {
+                performSegue(withIdentifier: "GoToHostedTours", sender: self)
+            }
+        } else {
+            print("My information")
         }
         
-        if(indexPath.row == 1) {
-            
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if(section == 0) {
+            return "Tours"
+        } else {
+            return "User Infomation"
         }
     }
+    
 }

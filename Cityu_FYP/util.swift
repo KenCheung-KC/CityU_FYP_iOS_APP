@@ -50,15 +50,10 @@ extension UIViewController {
     }
 
     func getDateAndTime(ISOString: String) -> DateAndTime? {
-//        print("ISOString: \(ISOString)")
         let splitedISOString = ISOString.components(separatedBy: "T")
-        print(splitedISOString)
-        print(splitedISOString[1].dropLast(5))
-        let date1 = splitedISOString[0]
-        let time1 = String(splitedISOString[1].dropLast(5))
-        
-        let dateAndTime = DateAndTime(date: date1, time: (time1))
-//        print("dateAndTime: \(dateAndTime)")
+        let date = splitedISOString[0]
+        let time = String(splitedISOString[1].dropLast(5))
+        let dateAndTime = DateAndTime(date: date, time: (time))
 
         return dateAndTime
     }

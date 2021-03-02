@@ -17,8 +17,6 @@ class LoginPageViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
-        print("LoginViewController view did load!")
-        print("baseUrl: \(baseUrl)")
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -46,17 +44,12 @@ class LoginPageViewController: UIViewController, UITextFieldDelegate {
             
             do {
                 let loginResponseFromServer = try JSONDecoder().decode(LoginResponse.self, from: data!)
-                print("response from server: \(loginResponseFromServer)")
-                print("type of serverRepsonse: \(type(of: loginResponseFromServer))")
                 let message = loginResponseFromServer.message
-                print("message: \(message)")
                 if (message == "login success") {
                     let token = loginResponseFromServer.token!
                     let userFromServer = loginResponseFromServer.user
-                    print("token: \(token)")
                     JWT_token = token
                     user = userFromServer
-                    print("user: \(user)")
                     DispatchQueue.main.async {
                         self.performSegue(withIdentifier: "GoToMainPage", sender: self)
                     }
@@ -69,7 +62,7 @@ class LoginPageViewController: UIViewController, UITextFieldDelegate {
                     }
                 }
             } catch let err {
-                print("err: \(err)")
+                print("err from loginPageViewController: \(err)")
             }
         }
         task.resume()

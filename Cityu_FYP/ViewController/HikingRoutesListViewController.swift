@@ -60,13 +60,13 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "GoToScrollableHikingRouteDetailPage", sender: self)
+        performSegue(withIdentifier: "GoToHikingRouteDetailPage", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "GoToScrollableHikingRouteDetailPage" {
+        if segue.identifier == "GoToHikingRouteDetailPage" {
             if let indexPath = self.hikingRouteTableView.indexPathForSelectedRow {
-                let destinationVC = segue.destination as! ScrollableHikingRouteDetailViewController
+                let destinationVC = segue.destination as! HikingRouteDetailViewController
                 destinationVC.hikingRouteDetail = hikingRoutes[indexPath.row]
             }
         }
@@ -83,13 +83,9 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
             (data, response, err) in
             do {
                 let responseFromServer = try JSONDecoder().decode(HikingRoutesResponse.self, from: data!)
-                print("hiking routes response from server: \(responseFromServer)")
-//                let message = responseFromServer.message
-//                print("message in hiking route: \(message)")
                 let hikingRoutesFromServer = responseFromServer.hikingRoutes
                 
                 for hikingRoute in hikingRoutesFromServer {
-                    print("hikingRoute: \(hikingRoute)")
                     self.hikingRoutes.append(hikingRoute)
                 }
                 
@@ -98,7 +94,7 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
                     self.removeSpinner(vc: self)
                 }
             } catch let err {
-                print("err: \(err)")
+                print("err from hikingRouteListViewController: \(err)")
             }
         }
         task.resume()

@@ -46,7 +46,6 @@ class JoinedToursListViewController: UIViewController, UITableViewDataSource, UI
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
         performSegue(withIdentifier: "GoToTourDetailFromJoinedTours", sender: self)
     }
     

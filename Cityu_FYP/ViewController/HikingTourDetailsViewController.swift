@@ -24,7 +24,6 @@ class HikingTourDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("hiking tour detail: \(hikingTourDetail)")
         hikingTourNameLabel.text = hikingTourDetail?.tourname
         hikingTourDateLabel.text = getDateAndTime(ISOString: hikingTourDetail!.dateandtime)?.date
         hikingTourTimeLabel.text = getDateAndTime(ISOString: hikingTourDetail!.dateandtime)?.time
@@ -61,7 +60,7 @@ class HikingTourDetailsViewController: UIViewController {
     }
     
     @IBAction func joinButtonOnTap(_ sender: Any) {
-        print("join")
+        showSpinner(vc: self)
         
         guard let url = URL(string: "\(baseUrl)/hikingTour/joinHikingTour/\(hikingTourDetail!.id)") else { return }
         var request = URLRequest(url: url)
@@ -75,12 +74,12 @@ class HikingTourDetailsViewController: UIViewController {
             
             do {
                 let responseFromServer = try JSONDecoder().decode(JoinedToursResponse.self, from: data!)
-//                print("join tour response: \(responseFromServer)")
                 let messageFromServer = responseFromServer.message
                 DispatchQueue.main.async {
                     let controller = UIAlertController(title: "Message From Server", message: messageFromServer, preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                     controller.addAction(okAction)
+                    self.removeSpinner(vc: self)
                     self.present(controller, animated: true, completion: nil)
                 }
             } catch let err {
@@ -93,7 +92,7 @@ class HikingTourDetailsViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "GoToHikingRouteDetailFromHikingTour" {
-            let destinationVC = segue.destination as! ScrollableHikingRouteDetailViewController
+            let destinationVC = segue.destination as! HikingRouteDetailViewController
             destinationVC.hikingRouteDetail = hikingRouteDetail
         }
     }

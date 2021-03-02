@@ -63,11 +63,9 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
                     (data, response, err) in
                     do {
                         let responseFromServer = try JSONDecoder().decode(HikingToursResponse.self, from: data!)
-//                        print("hiking tours response from server: \(responseFromServer)")
                         let hikingToursFromServer = responseFromServer.hikingTours
                         
                         for hikingTour in hikingToursFromServer {
-//                            print("hikingTour: \(hikingTour)")
                             self.hikingTours.append(hikingTour)
                         }
                         
@@ -76,7 +74,7 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
                             self.removeSpinner(vc: self)
                         }
                     } catch let err {
-                        print("err: \(err)")
+                        print("err from hikingTourListViewController: \(err)")
                     }
                 }
                 task.resume()

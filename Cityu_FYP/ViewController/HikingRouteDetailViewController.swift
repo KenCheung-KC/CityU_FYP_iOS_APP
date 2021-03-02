@@ -1,5 +1,5 @@
 //
-//  ScrollableHikingRouteDetailViewController.swift
+//  HikingRouteDetailViewController.swift
 //  Cityu_FYP
 //
 //  Created by Kam on 16/2/2021.
@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ScrollableHikingRouteDetailViewController: UIViewController, MKMapViewDelegate {
+class HikingRouteDetailViewController: UIViewController, MKMapViewDelegate {
 
     var hikingRouteDetail: HikingRoute?
     
