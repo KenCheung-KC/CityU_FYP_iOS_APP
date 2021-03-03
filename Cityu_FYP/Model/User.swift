@@ -13,4 +13,5 @@ struct User: Codable {
     var role: String
     var username: String
     var email: String
+    var createdat: String
 }

@@ -37,13 +37,10 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if(indexPath.row == 0) {
                 return joinedToursCell
             }
-                
             return hostedToursCell
         } else {
             return myInformationCell
         }
-        
-        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -56,6 +53,7 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 performSegue(withIdentifier: "GoToHostedTours", sender: self)
             }
         } else {
+            performSegue(withIdentifier: "GoToMyInformation", sender: self)
             print("My information")
         }
         
