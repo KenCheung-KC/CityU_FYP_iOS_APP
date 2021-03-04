@@ -32,14 +32,17 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let joinedToursCell = tableView.dequeueReusableCell(withIdentifier: "JoinedToursCell", for: indexPath)
         let hostedToursCell = tableView.dequeueReusableCell(withIdentifier: "HostedToursCell", for: indexPath)
         let myInformationCell = tableView.dequeueReusableCell(withIdentifier: "MyInformationCell", for: indexPath)
+        let logoutCell = tableView.dequeueReusableCell(withIdentifier: "LogOutCell", for: indexPath)
         
         if(indexPath.section == 0) {
             if(indexPath.row == 0) {
                 return joinedToursCell
             }
             return hostedToursCell
-        } else {
+        } else if (indexPath.section == 1) {
             return myInformationCell
+        } else {
+            return logoutCell
         }
     }
     
@@ -52,23 +55,37 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if(indexPath.row == 1) {
                 performSegue(withIdentifier: "GoToHostedTours", sender: self)
             }
-        } else {
+        } else if (indexPath.section == 1 && indexPath.row == 0){
             performSegue(withIdentifier: "GoToMyInformation", sender: self)
-            print("My information")
+        } else {
+            let alertController = UIAlertController(title: "Hint", message: "Are you sure to logout?", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Yes", style: .default) { (_) in
+                user = nil
+                JWT_token = nil
+                let navigationController = self.navigationController
+                let rootNavigationController = navigationController?.navigationController
+                rootNavigationController?.popToRootViewController(animated: true)
+            }
+            alertController.addAction(okAction)
+            let cancelAction = UIAlertAction(title: "No", style: .cancel, handler: nil)
+            alertController.addAction(cancelAction)
+            present(alertController, animated: true, completion: nil)
         }
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if(section == 0) {
             return "Tours"
-        } else {
+        }
+        if (section == 1) {
             return "User Infomation"
         }
+        
+        return ""
     }
     
 }
