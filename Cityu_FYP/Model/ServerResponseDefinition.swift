@@ -11,7 +11,7 @@ import Foundation
 struct LoginResponse: Codable {
     var message: String
     var token: String?
-    var user: User
+    var user: User?
 }
 
 struct HikingRouteResponse: Codable {
@@ -47,4 +47,8 @@ struct GetJoinedToursResponse: Codable {
 struct GetHostedToursResponse: Codable {
     var message: String
     var userHostedTours: [HikingTour]
+}
+
+struct CreateTourResponse: Codable {
+    var message: String
 }

@@ -11,7 +11,7 @@ import UIKit
 class MyInformationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    let titles: [String] = ["Username:", "Email:", "Registered since:"]
+    let titles: [String] = ["Username:", "Email:", "Registered at:"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,12 +39,14 @@ class MyInformationViewController: UIViewController, UITableViewDelegate, UITabl
             cell.detailLabel.text = user?.email
         }
         if (row == 2) {
-            if let dateAndTime = getDateAndTime(ISOString: user!.createdat) {
-                let date = dateAndTime.date
+            print(user!.createdat)
+            if let userCreatedAt = DateFormatter.isoStringFormatter.date(from: user!.createdat) {
+                let date = DateFormatter.dateFormatter.string(from: userCreatedAt)
+                print("user created at: \(date)")
                 cell.detailLabel.text = "\(date)"
             }
         }
-        
+
         return cell
     }
 }

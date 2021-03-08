@@ -14,6 +14,9 @@
 		3A2A68EB25D2843A001FC74F /* util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2A68EA25D28439001FC74F /* util.swift */; };
 		3A388CE125EFBB42009069BC /* MyInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A388CE025EFBB42009069BC /* MyInformationTableViewCell.swift */; };
 		3A388CE325EFBBAD009069BC /* MyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A388CE225EFBBAD009069BC /* MyInformationViewController.swift */; };
+		3A388CE525F37733009069BC /* CreateTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A388CE425F37733009069BC /* CreateTourViewController.swift */; };
+		3A630B0925F38652001B6A64 /* SelectRouteForTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B0825F38652001B6A64 /* SelectRouteForTourViewController.swift */; };
+		3A630B0B25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B0A25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift */; };
 		3A8BB55A25E5425D0053A8F5 /* HikingTourDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BB55925E5425D0053A8F5 /* HikingTourDetailsViewController.swift */; };
 		3A8C1F2C25C5415600DFCE97 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F2B25C5415600DFCE97 /* background.png */; };
 		3A8C1F2E25C543B600DFCE97 /* logo_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F2D25C543B600DFCE97 /* logo_1x.png */; };
@@ -53,6 +56,9 @@
 		3A2A68EA25D28439001FC74F /* util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = util.swift; sourceTree = "<group>"; };
 		3A388CE025EFBB42009069BC /* MyInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationTableViewCell.swift; sourceTree = "<group>"; };
 		3A388CE225EFBBAD009069BC /* MyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInformationViewController.swift; sourceTree = "<group>"; };
+		3A388CE425F37733009069BC /* CreateTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTourViewController.swift; sourceTree = "<group>"; };
+		3A630B0825F38652001B6A64 /* SelectRouteForTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRouteForTourViewController.swift; sourceTree = "<group>"; };
+		3A630B0A25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRouteForTourTableViewCell.swift; sourceTree = "<group>"; };
 		3A8BB55925E5425D0053A8F5 /* HikingTourDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingTourDetailsViewController.swift; sourceTree = "<group>"; };
 		3A8C1F2B25C5415600DFCE97 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		3A8C1F2D25C543B600DFCE97 /* logo_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_1x.png; sourceTree = "<group>"; };
@@ -97,6 +103,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A388CE625F37F7E009069BC /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C1F3B25C56D2F00DFCE97 /* LoginPageViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		3A388CE725F37F8A009069BC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3A8C1F3E25C56EE400DFCE97 /* RegisterViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		3A388CE825F37F9B009069BC /* HikingRoutes */ = {
+			isa = PBXGroup;
+			children = (
+				3AF17C6725D3B7DD0027A70D /* HikingRoutesListViewController.swift */,
+				3AE9F1AA25DC10E300E7670E /* HikingRouteDetailViewController.swift */,
+			);
+			path = HikingRoutes;
+			sourceTree = "<group>";
+		};
+		3A388CE925F37FAD009069BC /* HikingTours */ = {
+			isa = PBXGroup;
+			children = (
+				3A388CE425F37733009069BC /* CreateTourViewController.swift */,
+				3AE9F1AE25DD1A7500E7670E /* HikingTourListViewController.swift */,
+				3A8BB55925E5425D0053A8F5 /* HikingTourDetailsViewController.swift */,
+				3A630B0825F38652001B6A64 /* SelectRouteForTourViewController.swift */,
+			);
+			path = HikingTours;
+			sourceTree = "<group>";
+		};
+		3A388CEA25F37FB9009069BC /* More */ = {
+			isa = PBXGroup;
+			children = (
+				3A1FB09825ED664200929CB4 /* MoreViewController.swift */,
+				3A1FB09C25ED698600929CB4 /* JoinedToursListViewController.swift */,
+				3AD9A4A225EE6EBE00ECD9DE /* HostedToursListViewController.swift */,
+				3A388CE225EFBBAD009069BC /* MyInformationViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
 		3A8C1F2A25C5411900DFCE97 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,18 +167,13 @@
 		3A8C1F3D25C56E8700DFCE97 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3A388CE725F37F8A009069BC /* SignUp */,
+				3A388CE625F37F7E009069BC /* SignIn */,
+				3A388CE825F37F9B009069BC /* HikingRoutes */,
+				3A388CE925F37FAD009069BC /* HikingTours */,
+				3A388CEA25F37FB9009069BC /* More */,
 				3AADB6BB25BB437E0044850C /* ViewController.swift */,
 				3AE9F1AC25DD036B00E7670E /* ViewController2.swift */,
-				3A8C1F3B25C56D2F00DFCE97 /* LoginPageViewController.swift */,
-				3A8C1F3E25C56EE400DFCE97 /* RegisterViewController.swift */,
-				3AF17C6725D3B7DD0027A70D /* HikingRoutesListViewController.swift */,
-				3AE9F1AA25DC10E300E7670E /* HikingRouteDetailViewController.swift */,
-				3AE9F1AE25DD1A7500E7670E /* HikingTourListViewController.swift */,
-				3A8BB55925E5425D0053A8F5 /* HikingTourDetailsViewController.swift */,
-				3A1FB09825ED664200929CB4 /* MoreViewController.swift */,
-				3A1FB09C25ED698600929CB4 /* JoinedToursListViewController.swift */,
-				3AD9A4A225EE6EBE00ECD9DE /* HostedToursListViewController.swift */,
-				3A388CE225EFBBAD009069BC /* MyInformationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -185,6 +233,7 @@
 				3A1FB09E25ED6CFB00929CB4 /* JoinedTourDetailCell.swift */,
 				3AD9A4A425EE6F1300ECD9DE /* HostedTourDetailCell.swift */,
 				3A388CE025EFBB42009069BC /* MyInformationTableViewCell.swift */,
+				3A630B0A25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -277,13 +326,16 @@
 				3AE9F1AD25DD036B00E7670E /* ViewController2.swift in Sources */,
 				3A8C1F3F25C56EE400DFCE97 /* RegisterViewController.swift in Sources */,
 				3A388CE325EFBBAD009069BC /* MyInformationViewController.swift in Sources */,
+				3A388CE525F37733009069BC /* CreateTourViewController.swift in Sources */,
 				3A2A68EB25D2843A001FC74F /* util.swift in Sources */,
 				3AE9F1B125DD1BAE00E7670E /* HikingTourItemCell.swift in Sources */,
 				3AADB6C225BB437E0044850C /* Cityu_FYP.xcdatamodeld in Sources */,
 				3AF17C6D25D5B7F30027A70D /* HikingRoute.swift in Sources */,
 				3A388CE125EFBB42009069BC /* MyInformationTableViewCell.swift in Sources */,
+				3A630B0925F38652001B6A64 /* SelectRouteForTourViewController.swift in Sources */,
 				3A1FB09F25ED6CFB00929CB4 /* JoinedTourDetailCell.swift in Sources */,
 				3AF17C7225D64C890027A70D /* HikingRouteItemCell.swift in Sources */,
+				3A630B0B25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift in Sources */,
 				3A8BB55A25E5425D0053A8F5 /* HikingTourDetailsViewController.swift in Sources */,
 				3AF17C6825D3B7DD0027A70D /* HikingRoutesListViewController.swift in Sources */,
 				3AD9A4A525EE6F1300ECD9DE /* HostedTourDetailCell.swift in Sources */,

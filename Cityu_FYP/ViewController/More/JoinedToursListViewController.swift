@@ -34,13 +34,15 @@ class JoinedToursListViewController: UIViewController, UITableViewDataSource, UI
         
         let joinedTourName = joinedTours[indexPath.row].tourname
         let routeOfTour = joinedTours[indexPath.row].hikingroutename
-        let date = getDateAndTime(ISOString: joinedTours[indexPath.row].dateandtime)?.date
-        let time = getDateAndTime(ISOString: joinedTours[indexPath.row].dateandtime)?.time
-        
+        let joinedTourDateAndTime = joinedTours[indexPath.row].dateandtime
+        if let dateAndTime = DateFormatter.isoStringFormatter.date(from: joinedTourDateAndTime) {
+            let date = DateFormatter.dateFormatter.string(from: dateAndTime)
+            let time = DateFormatter.timeFormatter.string(from: dateAndTime)
+            cell.hikingToueDateLabel.text = date
+            cell.hikingTourTimeLabel.text = time
+        }
         cell.hikingTourNameLabel.text = joinedTourName
         cell.hikingRouteOfTourLabel.text = routeOfTour
-        cell.hikingToueDateLabel.text = date
-        cell.hikingTourTimeLabel.text = time
         
         return cell
     }

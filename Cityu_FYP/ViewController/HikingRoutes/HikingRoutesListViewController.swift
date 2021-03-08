@@ -11,6 +11,7 @@ import UIKit
 class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var hikingRoutes: [HikingRoute] = []
+    var refreshControl: UIRefreshControl!
     
     @IBOutlet weak var hikingRouteTableView: UITableView!
     
@@ -19,6 +20,10 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
         getHikingRoutes()
         hikingRouteTableView.delegate = self
         hikingRouteTableView.dataSource = self
+        
+        refreshControl = UIRefreshControl()
+        hikingRouteTableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -74,7 +79,7 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     
     func getHikingRoutes() {
         showSpinner(vc: self)
-        
+        hikingRoutes = []
         guard let url = URL(string: "\(baseUrl)/hikingRoute/hikingRouteList") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -100,10 +105,16 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
         task.resume()
     }
     
-//    func getUIImage(imageUrl: String) -> UIImage {
-//        guard let imageUrl = URL(string: imageUrl) else { return }
-//        return UIImage()
-//    }
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        // Do some reloading of data and update the table view's data source
+        // Fetch more objects from a web service, for example...
+
+        getHikingRoutes()
+        // Simply adding an object to the data source for this example
+        print("table refreshed!")
+
+        refreshControl.endRefreshing()
+    }
     
 }
 
