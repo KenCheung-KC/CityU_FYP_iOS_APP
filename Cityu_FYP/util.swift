@@ -41,29 +41,74 @@ extension UIViewController {
     func hideNavigationBar(animated: Bool){
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-
+        
     }
-
+    
     func showNavigationBar(animated: Bool) {
         // Show the navigation bar on other view controllers
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
-
+    
     func getDateAndTime(ISOString: String) -> DateAndTime? {
+        // this function is not used now.
+        print("ISOString: \(ISOString)")
+        let isoStringFromServerToDate = DateFormatter.isoStringFormatter.date(from: ISOString)
+        print("string to date: \(isoStringFromServerToDate)")
+        let dateToString = DateFormatter.isoStringFormatter.string(from: isoStringFromServerToDate!)
+        print("date to string: \(dateToString)")
         let splitedISOString = ISOString.components(separatedBy: "T")
         let date = splitedISOString[0]
         let time = String(splitedISOString[1].dropLast(5))
         let dateAndTime = DateAndTime(date: date, time: (time))
-
+        
         return dateAndTime
     }
     
-//    func showAlert(vc: UIViewController, message: String) {
-//        DispatchQueue.main.async {
-//            let controller = UIAlertController(title: "Warning", message: messageFromServer, preferredStyle: .alert)
-//            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-//            controller.addAction(okAction)
-//            self.present(controller, animated: true, completion: nil)
-//        }
-//    }
+    //    func showAlert(vc: UIViewController, message: String) {
+    //        DispatchQueue.main.async {
+    //            let controller = UIAlertController(title: "Warning", message: messageFromServer, preferredStyle: .alert)
+    //            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+    //            controller.addAction(okAction)
+    //            self.present(controller, animated: true, completion: nil)
+    //        }
+    //    }
+}
+
+extension DateFormatter {
+    
+    static let isoStringFormatter: DateFormatter = {
+        let df = DateFormatter()
+        
+        // 2) Set the current timezone to .current, or America/Chicago.
+        //        df.timeZone = .current
+        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        
+        // 3) Set the format of the altered date.
+        //        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sssZ"
+        
+        return df
+    }()
+    
+    static let dateAndTimeFormatter: DateFormatter = {
+        let df = DateFormatter()
+        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        df.dateStyle = .full
+        df.timeStyle = .medium
+        return df
+    }()
+    
+    static let dateFormatter: DateFormatter = {
+        let df = DateFormatter()
+        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        df.dateStyle = .full
+        return df
+    }()
+    
+    static let timeFormatter: DateFormatter = {
+        let df = DateFormatter()
+        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        df.timeStyle = .medium
+        return df
+    }()
 }

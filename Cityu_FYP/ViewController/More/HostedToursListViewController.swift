@@ -34,13 +34,15 @@ class HostedToursListViewController: UIViewController, UITableViewDataSource, UI
         let cell = hostedToursTableView.dequeueReusableCell(withIdentifier: "HostedTourDetailCell", for: indexPath) as! HostedTourDetailCell
         let hostedTourName = hostedTours[indexPath.row].tourname
         let routeNameOfHostedTour = hostedTours[indexPath.row].hikingroutename
-        let hostedTourDate = getDateAndTime(ISOString: hostedTours[indexPath.row].dateandtime)?.date
-        let hostedTourTime = getDateAndTime(ISOString: hostedTours[indexPath.row].dateandtime)?.time
-        
+        let hostedTourDateAndTime = hostedTours[indexPath.row].dateandtime
+        if let dateAndTime = DateFormatter.isoStringFormatter.date(from: hostedTourDateAndTime) {
+            let date = DateFormatter.dateFormatter.string(from: dateAndTime)
+            let time = DateFormatter.timeFormatter.string(from: dateAndTime)
+            cell.hostedTourDateLabel.text = date
+            cell.hostedTourTimeLabel.text = time
+        }
         cell.hostedTourNameLabel.text = hostedTourName
         cell.hostedTourRouteNameLabel.text = routeNameOfHostedTour
-        cell.hostedTourDateLabel.text = hostedTourDate
-        cell.hostedTourTimeLabel.text = hostedTourTime
         
         return cell
     }

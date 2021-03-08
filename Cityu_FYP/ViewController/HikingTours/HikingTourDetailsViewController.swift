@@ -24,9 +24,13 @@ class HikingTourDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tourDateAndTime = hikingTourDetail!.dateandtime
+        guard let dateAndTime = DateFormatter.isoStringFormatter.date(from: tourDateAndTime) else { return }
+        let date = DateFormatter.dateFormatter.string(from: dateAndTime)
+        let time = DateFormatter.timeFormatter.string(from: dateAndTime)
         hikingTourNameLabel.text = hikingTourDetail?.tourname
-        hikingTourDateLabel.text = getDateAndTime(ISOString: hikingTourDetail!.dateandtime)?.date
-        hikingTourTimeLabel.text = getDateAndTime(ISOString: hikingTourDetail!.dateandtime)?.time
+        hikingTourDateLabel.text = date
+        hikingTourTimeLabel.text = time
         hikingTourHostNameLabel.text = hikingTourDetail?.hostname
         hikingTourMinimumParticipantLabel.text = String(hikingTourDetail!.minimumparticipant)
         hikingTourMaximumParticipantLabel.text = String(hikingTourDetail!.maximumparticipant)

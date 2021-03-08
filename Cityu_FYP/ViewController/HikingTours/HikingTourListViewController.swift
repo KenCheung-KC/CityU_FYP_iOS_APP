@@ -12,6 +12,19 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var hikingTourTableView: UITableView!
     var hikingTours: [HikingTour] = []
+    var refreshControl: UIRefreshControl!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hikingTourTableView.delegate = self
+        hikingTourTableView.dataSource = self
+        
+        refreshControl = UIRefreshControl()
+        hikingTourTableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)
+        
+        getHikingTours()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return hikingTours.count
@@ -26,6 +39,15 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
         cell.hikingTourNameLabel.text = hikingTours[indexPath.row].tourname
         cell.hikingRouteNameLabel.text = hikingTours[indexPath.row].hikingroutename
         cell.hikingTourDescriptionLabel.text = hikingTours[indexPath.row].tourdescription
+        let imageUrl = hikingTours[indexPath.row].hikingrouteimage
+        let url = URL(string: imageUrl)
+        URLSession.shared.dataTask(with: url!){
+            (data, response, err) in
+            guard let data = data else { return }
+            DispatchQueue.main.async {
+                cell.hikingTourImageView.image = UIImage(data: data)
+            }
+        }.resume()
         
         return cell
     }
@@ -44,17 +66,9 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
         }
     }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        hikingTourTableView.delegate = self
-        hikingTourTableView.dataSource = self
-        getHikingTours()
-    }
-    
     func getHikingTours() {
         showSpinner(vc: self)
-        
+        hikingTours = []
         guard let url = URL(string: "\(baseUrl)/hikingTour/hikingToursList") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -79,5 +93,19 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
                 }
                 task.resume()
     }
+ 
+    @IBAction func unwindToHikingToursListVC(_ sender: UIStoryboardSegue) {
+        getHikingTours()
+    }
     
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        // Do some reloading of data and update the table view's data source
+        // Fetch more objects from a web service, for example...
+
+        getHikingTours()
+        // Simply adding an object to the data source for this example
+        print("table refreshed!")
+
+        refreshControl.endRefreshing()
+    }
 }
