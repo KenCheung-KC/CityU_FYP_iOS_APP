@@ -21,9 +21,15 @@ class HikingTourDetailsViewController: UIViewController {
     @IBOutlet weak var hikingTourMaximumParticipantLabel: UILabel!
     @IBOutlet weak var hikingRouteButton: UIButton!
     @IBOutlet weak var hikingTourDescriptionLabel: UILabel!
+    @IBOutlet weak var navigationBarEditButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(hikingTourDetail?.hostid != user?.id) {
+            self.navigationItem.rightBarButtonItem = nil
+        } else {
+            self.navigationItem.rightBarButtonItem = navigationBarEditButton
+        }
         let tourDateAndTime = hikingTourDetail!.dateandtime
         guard let dateAndTime = DateFormatter.isoStringFormatter.date(from: tourDateAndTime) else { return }
         let date = DateFormatter.dateFormatter.string(from: dateAndTime)
@@ -99,6 +105,16 @@ class HikingTourDetailsViewController: UIViewController {
             let destinationVC = segue.destination as! HikingRouteDetailViewController
             destinationVC.hikingRouteDetail = hikingRouteDetail
         }
+        
+        if segue.identifier == "GoToCreateTourVCToEditTour" {
+            let destinationVC = segue.destination as! CreateTourViewController
+            destinationVC.editingTour = true
+            destinationVC.existingHikingTour = hikingTourDetail
+        }
+    }
+    
+    @IBAction func navigationBarEditButtonOnTap(_ sender: Any) {
+        performSegue(withIdentifier: "GoToCreateTourVCToEditTour", sender: self)
     }
     
 }

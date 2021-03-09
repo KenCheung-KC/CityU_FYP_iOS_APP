@@ -49,6 +49,7 @@ struct GetHostedToursResponse: Codable {
     var userHostedTours: [HikingTour]
 }
 
-struct CreateTourResponse: Codable {
+struct CreateOrEditTourResponse: Codable {
     var message: String
 }
+
