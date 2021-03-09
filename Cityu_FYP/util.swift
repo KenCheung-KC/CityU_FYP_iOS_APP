@@ -108,7 +108,7 @@ extension DateFormatter {
     static let timeFormatter: DateFormatter = {
         let df = DateFormatter()
         df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
-        df.timeStyle = .medium
+        df.timeStyle = .short
         return df
     }()
 }
