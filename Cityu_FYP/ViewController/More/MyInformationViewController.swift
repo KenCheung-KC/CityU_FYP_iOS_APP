@@ -32,6 +32,9 @@ class MyInformationViewController: UIViewController, UITableViewDelegate, UITabl
         let row = indexPath.row
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyInformationCell", for: indexPath) as! MyInformationTableViewCell
         cell.titleLabel.text = titles[indexPath.row]
+        
+        // Make the table view cell has no effect when selected
+//        cell.selectionStyle = .none
         if(row == 0) {
             cell.detailLabel.text = user?.username
         }
@@ -42,7 +45,6 @@ class MyInformationViewController: UIViewController, UITableViewDelegate, UITabl
             print(user!.createdat)
             if let userCreatedAt = DateFormatter.isoStringFormatter.date(from: user!.createdat) {
                 let date = DateFormatter.dateFormatter.string(from: userCreatedAt)
-                print("user created at: \(date)")
                 cell.detailLabel.text = "\(date)"
             }
         }

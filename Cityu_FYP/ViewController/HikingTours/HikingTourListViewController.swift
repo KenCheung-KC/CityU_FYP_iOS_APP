@@ -95,6 +95,7 @@ class HikingTourListViewController: UIViewController, UITableViewDelegate, UITab
     }
  
     @IBAction func unwindToHikingToursListVC(_ sender: UIStoryboardSegue) {
+        print("unwindToHikingToursListVC called!")
         getHikingTours()
     }
     

@@ -19,7 +19,6 @@ class CreateTourViewController: UIViewController {
     @IBOutlet weak var minimumParticipantsTextField: UITextField!
     @IBOutlet weak var tourDatePicker: UIDatePicker!
     @IBOutlet weak var tourDescriptionTextView: UITextView!
-    //    @IBOutlet weak var someTextLabel: UILabel!
     @IBOutlet weak var chooseHikingRouteButton: UIButton!
     @IBOutlet weak var createTourButton: UIButton!
     
@@ -32,8 +31,7 @@ class CreateTourViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("editingTour: \(editingTour)")
-        print("existingHikingTour: \(existingHikingTour)")
+        
         let blackBorder = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         tourDescriptionTextView.layer.borderColor = blackBorder.cgColor
         tourDescriptionTextView.layer.borderWidth = 0.5
@@ -42,7 +40,6 @@ class CreateTourViewController: UIViewController {
         if let hikingTour = existingHikingTour {
             let tourName = hikingTour.tourname
             guard let dateAndTime = DateFormatter.isoStringFormatter.date(from: hikingTour.dateandtime) else { return }
-            print("aaaaa: \(dateAndTime)")
             let routeName = hikingTour.hikingroutename
             let minParticipants = hikingTour.minimumparticipant
             let maxParticipants = hikingTour.maximumparticipant
@@ -68,31 +65,24 @@ class CreateTourViewController: UIViewController {
     }
     
     @IBAction func createButtonOnTap(_ sender: Any) {
-        print("Create button tapped")
         showSpinner(vc: self)
         var hikingRouteId: Int?
         
         guard let hostId = user?.id else { return }
-        print("hostId: \(hostId)")
         guard let tourName = tourNameTextField.text else { return }
-        print("tourName: \(tourName)")
+        
         if let routeId = selectedHikingRoute?.id {
             hikingRouteId = routeId
+        } else {
+            if let existingRouteId = existingHikingTour?.hikingrouteid {
+                hikingRouteId = existingRouteId
+            }
         }
-        if let existingRouteId = existingHikingTour?.hikingrouteid {
-            hikingRouteId = existingRouteId
-        }
-        //        guard let hikingRouteId = selectedHikingRoute?.id else { return }
-        print("routeId: \(hikingRouteId)")
-        guard let maximumParticipants = maximumParticipantsTextField.text else { return }
-        print("maximumParticipants: \(maximumParticipants)")
-        guard let minimumParticipants = minimumParticipantsTextField.text else { return }
-        print("minimumParticipants: \(minimumParticipants)")
-        let datePickerDate = DateFormatter.isoStringFormatter.string(from: tourDatePicker.date)
-        print("datePickerDate: \(datePickerDate)")
-        guard let tourDescription = tourDescriptionTextView.text else { return }
-        print("tourDescription: \(tourDescription)")
         
+        guard let maximumParticipants = maximumParticipantsTextField.text else { return }
+        guard let minimumParticipants = minimumParticipantsTextField.text else { return }
+        let datePickerDate = DateFormatter.isoStringFormatter.string(from: tourDatePicker.date)
+        guard let tourDescription = tourDescriptionTextView.text else { return }
         
         if(editingTour == false) {
             // create tour, post request
@@ -100,12 +90,9 @@ class CreateTourViewController: UIViewController {
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             let requestBody = "hostId=\(hostId)&tourName=\(tourName)&hikingRouteId=\(hikingRouteId!)&maximumParticipants=\(maximumParticipants)&minimumParticipants=\(minimumParticipants)&dateAndTime=\(datePickerDate)&tourDescription=\(tourDescription)".data(using: .utf8)
-            
-            print("request body: \(String(decoding: requestBody!, as: UTF8.self))")
             request.httpBody = requestBody
-            print(request.httpBody)
-            print("httpBody: \(String(decoding: request.httpBody!, as: UTF8.self))")
             request.setValue(JWT_token!, forHTTPHeaderField: "Authorization")
+            
             let task = URLSession.shared.dataTask(with: request){
                 (data, response, error) in
                 do {
@@ -135,11 +122,10 @@ class CreateTourViewController: UIViewController {
             var request = URLRequest(url: url)
             request.httpMethod = "PUT"
             let requestBody = "hostId=\(hostId)&tourName=\(tourName)&hikingRouteId=\(hikingRouteId!)&maximumParticipants=\(maximumParticipants)&minimumParticipants=\(minimumParticipants)&dateAndTime=\(datePickerDate)&tourDescription=\(tourDescription)".data(using: .utf8)
-            
-            print("request body: \(String(decoding: requestBody!, as: UTF8.self))")
             request.httpBody = requestBody
-            print("httpBody: \(String(decoding: request.httpBody!, as: UTF8.self))")
             request.setValue(JWT_token!, forHTTPHeaderField: "Authorization")
+            request.setValue("Application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+            
             let task = URLSession.shared.dataTask(with: request){
                 (data, response, error) in
                 do {
@@ -169,7 +155,7 @@ class CreateTourViewController: UIViewController {
     }
     
     @IBAction func unwindToCreateTourVC(_ sender: UIStoryboardSegue) {
-        print("sss: \(selectedHikingRoute)")
+        print("SelectedHikingRoute: \(selectedHikingRoute)")
     }
     
 }
