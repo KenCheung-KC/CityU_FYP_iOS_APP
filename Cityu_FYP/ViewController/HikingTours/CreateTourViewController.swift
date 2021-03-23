@@ -32,6 +32,8 @@ class CreateTourViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tourDatePicker.minimumDate = Date()
+        
         let blackBorder = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         tourDescriptionTextView.layer.borderColor = blackBorder.cgColor
         tourDescriptionTextView.layer.borderWidth = 0.5
