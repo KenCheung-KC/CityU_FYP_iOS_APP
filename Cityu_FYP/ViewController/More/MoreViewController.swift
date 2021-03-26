@@ -21,7 +21,7 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if(section == 0) {
-            return 2
+            return 3
         } else {
             return 1
         }
@@ -31,6 +31,7 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let joinedToursCell = tableView.dequeueReusableCell(withIdentifier: "JoinedToursCell", for: indexPath)
         let hostedToursCell = tableView.dequeueReusableCell(withIdentifier: "HostedToursCell", for: indexPath)
+        let likedRoutesCell = tableView.dequeueReusableCell(withIdentifier: "LikedRoutesCell", for: indexPath)
         let myInformationCell = tableView.dequeueReusableCell(withIdentifier: "MyInformationCell", for: indexPath)
         let logoutCell = tableView.dequeueReusableCell(withIdentifier: "LogOutCell", for: indexPath)
         
@@ -38,7 +39,10 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if(indexPath.row == 0) {
                 return joinedToursCell
             }
-            return hostedToursCell
+            if(indexPath.row == 1) {
+                return hostedToursCell
+            }
+            return likedRoutesCell
         } else if (indexPath.section == 1) {
             return myInformationCell
         } else {
@@ -54,6 +58,10 @@ class MoreViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
             if(indexPath.row == 1) {
                 performSegue(withIdentifier: "GoToHostedTours", sender: self)
+            }
+            
+            if(indexPath.row == 2) {
+                performSegue(withIdentifier: "GoToLikedRoutes", sender: self)
             }
         } else if (indexPath.section == 1 && indexPath.row == 0){
             performSegue(withIdentifier: "GoToMyInformation", sender: self)

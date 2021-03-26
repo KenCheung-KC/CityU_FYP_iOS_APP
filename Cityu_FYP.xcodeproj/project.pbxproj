@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		3A388CE525F37733009069BC /* CreateTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A388CE425F37733009069BC /* CreateTourViewController.swift */; };
 		3A630B0925F38652001B6A64 /* SelectRouteForTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B0825F38652001B6A64 /* SelectRouteForTourViewController.swift */; };
 		3A630B0B25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B0A25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift */; };
+		3A8742C3260E4A8D00122212 /* LikedRoutesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8742C2260E4A8D00122212 /* LikedRoutesListViewController.swift */; };
+		3A8742C5260E4AB500122212 /* LikedRouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8742C4260E4AB500122212 /* LikedRouteTableViewCell.swift */; };
 		3A8BB55A25E5425D0053A8F5 /* HikingTourDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8BB55925E5425D0053A8F5 /* HikingTourDetailsViewController.swift */; };
 		3A8C1F2C25C5415600DFCE97 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F2B25C5415600DFCE97 /* background.png */; };
 		3A8C1F2E25C543B600DFCE97 /* logo_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F2D25C543B600DFCE97 /* logo_1x.png */; };
@@ -60,6 +62,8 @@
 		3A388CE425F37733009069BC /* CreateTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTourViewController.swift; sourceTree = "<group>"; };
 		3A630B0825F38652001B6A64 /* SelectRouteForTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRouteForTourViewController.swift; sourceTree = "<group>"; };
 		3A630B0A25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRouteForTourTableViewCell.swift; sourceTree = "<group>"; };
+		3A8742C2260E4A8D00122212 /* LikedRoutesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedRoutesListViewController.swift; sourceTree = "<group>"; };
+		3A8742C4260E4AB500122212 /* LikedRouteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedRouteTableViewCell.swift; sourceTree = "<group>"; };
 		3A8BB55925E5425D0053A8F5 /* HikingTourDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingTourDetailsViewController.swift; sourceTree = "<group>"; };
 		3A8C1F2B25C5415600DFCE97 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		3A8C1F2D25C543B600DFCE97 /* logo_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_1x.png; sourceTree = "<group>"; };
@@ -114,7 +118,6 @@
 				472566231352581C1394E990 /* Pods-Cityu_FYP.debug.xcconfig */,
 				C1C57BF765AAA2360AC7F661 /* Pods-Cityu_FYP.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +163,7 @@
 				3A1FB09825ED664200929CB4 /* MoreViewController.swift */,
 				3A1FB09C25ED698600929CB4 /* JoinedToursListViewController.swift */,
 				3AD9A4A225EE6EBE00ECD9DE /* HostedToursListViewController.swift */,
+				3A8742C2260E4A8D00122212 /* LikedRoutesListViewController.swift */,
 				3A388CE225EFBBAD009069BC /* MyInformationViewController.swift */,
 			);
 			path = More;
@@ -251,6 +255,7 @@
 				3AD9A4A425EE6F1300ECD9DE /* HostedTourDetailCell.swift */,
 				3A388CE025EFBB42009069BC /* MyInformationTableViewCell.swift */,
 				3A630B0A25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift */,
+				3A8742C4260E4AB500122212 /* LikedRouteTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -385,8 +390,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8742C5260E4AB500122212 /* LikedRouteTableViewCell.swift in Sources */,
 				3A1FB09725ED5B2600929CB4 /* DateAndTime.swift in Sources */,
 				3A8C1F3C25C56D2F00DFCE97 /* LoginPageViewController.swift in Sources */,
+				3A8742C3260E4A8D00122212 /* LikedRoutesListViewController.swift in Sources */,
 				3AE9F1B325DD58B500E7670E /* HikingTour.swift in Sources */,
 				3AADB6BC25BB437E0044850C /* ViewController.swift in Sources */,
 				3AF17C6A25D5B7A20027A70D /* ServerResponseDefinition.swift in Sources */,
