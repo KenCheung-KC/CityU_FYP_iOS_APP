@@ -42,7 +42,6 @@ class MyInformationViewController: UIViewController, UITableViewDelegate, UITabl
             cell.detailLabel.text = user?.email
         }
         if (row == 2) {
-            print(user!.createdat)
             if let userCreatedAt = DateFormatter.isoStringFormatter.date(from: user!.createdat) {
                 let date = DateFormatter.dateFormatter.string(from: userCreatedAt)
                 cell.detailLabel.text = "\(date)"

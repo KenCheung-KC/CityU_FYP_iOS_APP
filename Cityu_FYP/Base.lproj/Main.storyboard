@@ -210,23 +210,23 @@
                                                     <rect key="frame" x="109" y="206" width="192" height="41"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="rp9-JG-ijn">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="rp9-JG-ijn">
                                                             <rect key="frame" x="40" y="2" width="32" height="39"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Nip-Mi-ViU">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="Nip-Mi-ViU">
                                                             <rect key="frame" x="0.0" y="2" width="32" height="39"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="RIp-vX-Qz3">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="RIp-vX-Qz3">
                                                             <rect key="frame" x="80" y="2" width="32" height="39"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_star" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-ci-Vzb">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_empty" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-ci-Vzb">
                                                             <rect key="frame" x="120" y="0.0" width="32" height="39"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_star" translatesAutoresizingMaskIntoConstraints="NO" id="aCQ-Ew-5NE">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_empty" translatesAutoresizingMaskIntoConstraints="NO" id="aCQ-Ew-5NE">
                                                             <rect key="frame" x="160" y="0.0" width="32" height="39"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -548,23 +548,23 @@
                                                     <rect key="frame" x="15" y="59" width="182" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="HNt-51-gNM">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="HNt-51-gNM">
                                                             <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="7Db-va-El5">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="7Db-va-El5">
                                                             <rect key="frame" x="38" y="0.0" width="30" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="107-y6-7p7">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="107-y6-7p7">
                                                             <rect key="frame" x="76" y="0.0" width="30" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="Qjd-6D-GGp">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjd-6D-GGp">
                                                             <rect key="frame" x="114" y="0.0" width="30" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-4b-rIR">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="d2f-4b-rIR">
                                                             <rect key="frame" x="152" y="0.0" width="30" height="30"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -714,7 +714,7 @@
                                                 </constraints>
                                             </mapView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bhi-AJ-Vbp">
-                                                <rect key="frame" x="15" y="295" width="345" height="50"/>
+                                                <rect key="frame" x="15" y="331" width="345" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Difficulty: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OM-eG-HsS">
                                                         <rect key="frame" x="0.0" y="0.0" width="88" height="50"/>
@@ -722,26 +722,26 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLs-Pc-zaT">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLs-Pc-zaT" userLabel="Difficulty Icon Container">
                                                         <rect key="frame" x="95" y="0.0" width="250" height="50"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="JM5-is-ZZj">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="JM5-is-ZZj">
                                                                 <rect key="frame" x="0.0" y="2" width="32" height="39"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="XOV-6U-Y0R">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="XOV-6U-Y0R">
                                                                 <rect key="frame" x="40" y="2" width="32" height="39"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="1fg-65-BBf">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_fill" translatesAutoresizingMaskIntoConstraints="NO" id="1fg-65-BBf">
                                                                 <rect key="frame" x="80" y="2" width="32" height="39"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_star" translatesAutoresizingMaskIntoConstraints="NO" id="oR0-81-UMA">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_empty" translatesAutoresizingMaskIntoConstraints="NO" id="oR0-81-UMA">
                                                                 <rect key="frame" x="120" y="0.0" width="32" height="39"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_star" translatesAutoresizingMaskIntoConstraints="NO" id="1jf-1u-yWJ">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="weakness_empty" translatesAutoresizingMaskIntoConstraints="NO" id="1jf-1u-yWJ">
                                                                 <rect key="frame" x="160" y="0.0" width="32" height="39"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
@@ -754,7 +754,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gL2-aH-lmH">
-                                                <rect key="frame" x="15" y="345" width="345" height="22"/>
+                                                <rect key="frame" x="15" y="381" width="345" height="22"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ay-Qh-hgf">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="22"/>
@@ -780,7 +780,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ump-Br-fS6">
-                                                <rect key="frame" x="15" y="367" width="345" height="22"/>
+                                                <rect key="frame" x="15" y="403" width="345" height="22"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fv3-u5-a5A">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="22"/>
@@ -806,7 +806,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="XDb-lm-Orz">
-                                                <rect key="frame" x="15" y="389" width="345" height="22"/>
+                                                <rect key="frame" x="15" y="425" width="345" height="22"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXV-Am-t1m">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="20.5"/>
@@ -829,7 +829,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-Qd-VVS">
-                                                <rect key="frame" x="15" y="411" width="345" height="22"/>
+                                                <rect key="frame" x="15" y="447" width="345" height="22"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated duration:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGm-Kc-0Tt">
                                                         <rect key="frame" x="0.0" y="0.0" width="170" height="20.5"/>
@@ -852,7 +852,7 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf3-ur-kEh">
-                                                <rect key="frame" x="15" y="448" width="345" height="20.5"/>
+                                                <rect key="frame" x="15" y="484" width="345" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="345" id="PZ5-vU-91z"/>
                                                 </constraints>
@@ -866,6 +866,26 @@
                                                 <color key="textColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hU4-k5-1Dz" userLabel="Rating Stack View">
+                                                <rect key="frame" x="15" y="289" width="345" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eZ-K6-PjF">
+                                                        <rect key="frame" x="0.0" y="5" width="53.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-fA-gsp" customClass="CosmosView" customModule="Cosmos">
+                                                        <rect key="frame" x="61.5" y="0.0" width="283.5" height="30"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                                <real key="value" value="30"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -876,7 +896,7 @@
                                             <constraint firstAttribute="width" constant="375" id="BOL-bl-1zb"/>
                                             <constraint firstItem="bhi-AJ-Vbp" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="EKV-Vf-KRh"/>
                                             <constraint firstItem="gL2-aH-lmH" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="M1E-zI-GKV"/>
-                                            <constraint firstItem="bhi-AJ-Vbp" firstAttribute="top" secondItem="DOH-oC-oX5" secondAttribute="bottom" constant="14" id="OFQ-w3-JOq"/>
+                                            <constraint firstItem="bhi-AJ-Vbp" firstAttribute="top" secondItem="hU4-k5-1Dz" secondAttribute="bottom" constant="10" id="OFQ-w3-JOq"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Mf3-ur-kEh" secondAttribute="bottom" constant="20" id="OhN-5b-tUH"/>
                                             <constraint firstAttribute="trailing" secondItem="bhi-AJ-Vbp" secondAttribute="trailing" constant="15" id="PYD-yp-ise"/>
                                             <constraint firstItem="Uej-Qd-VVS" firstAttribute="top" secondItem="XDb-lm-Orz" secondAttribute="bottom" id="Qwz-VX-gX8"/>
@@ -884,6 +904,7 @@
                                             <constraint firstAttribute="trailing" secondItem="yHE-Ho-Oi1" secondAttribute="trailing" id="UAU-xE-G0P"/>
                                             <constraint firstItem="ump-Br-fS6" firstAttribute="top" secondItem="gL2-aH-lmH" secondAttribute="bottom" id="V62-Fr-Ocn"/>
                                             <constraint firstAttribute="trailing" secondItem="Uej-Qd-VVS" secondAttribute="trailing" constant="15" id="b9T-uc-vny"/>
+                                            <constraint firstItem="hU4-k5-1Dz" firstAttribute="top" secondItem="DOH-oC-oX5" secondAttribute="bottom" constant="10" id="bYa-Vf-pr0"/>
                                             <constraint firstItem="Mf3-ur-kEh" firstAttribute="top" secondItem="Uej-Qd-VVS" secondAttribute="bottom" constant="15" id="fW8-VC-3Az"/>
                                             <constraint firstAttribute="height" priority="250" constant="667" id="iup-Dt-ld5"/>
                                             <constraint firstItem="DOH-oC-oX5" firstAttribute="leading" secondItem="bhi-AJ-Vbp" secondAttribute="leading" id="jMk-mL-hmE"/>
@@ -892,10 +913,12 @@
                                             <constraint firstItem="ump-Br-fS6" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="mf4-f0-Wv5"/>
                                             <constraint firstItem="XDb-lm-Orz" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="ocJ-Gi-g9b"/>
                                             <constraint firstAttribute="trailing" secondItem="ump-Br-fS6" secondAttribute="trailing" constant="15" id="oys-ex-RSc"/>
+                                            <constraint firstItem="hU4-k5-1Dz" firstAttribute="leading" secondItem="Ftk-x3-94q" secondAttribute="leading" constant="15" id="r4z-86-zqg"/>
                                             <constraint firstItem="gL2-aH-lmH" firstAttribute="top" secondItem="bhi-AJ-Vbp" secondAttribute="bottom" id="tVi-cT-ufQ"/>
                                             <constraint firstItem="DOH-oC-oX5" firstAttribute="top" secondItem="yHE-Ho-Oi1" secondAttribute="bottom" constant="17" id="tWe-ip-lJW"/>
                                             <constraint firstItem="XDb-lm-Orz" firstAttribute="top" secondItem="ump-Br-fS6" secondAttribute="bottom" id="v0y-9Y-Fzr"/>
                                             <constraint firstItem="DOH-oC-oX5" firstAttribute="trailing" secondItem="bhi-AJ-Vbp" secondAttribute="trailing" id="vJ9-db-VYj"/>
+                                            <constraint firstAttribute="trailing" secondItem="hU4-k5-1Dz" secondAttribute="trailing" constant="15" id="wPe-n8-Q18"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -916,22 +939,30 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="myM-eC-V2m"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BUY-zA-vzm"/>
+                    <navigationItem key="navigationItem" id="BUY-zA-vzm">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart" catalog="system" id="RTD-FQ-KE7">
+                            <connections>
+                                <action selector="likeHikingRouteBarButtonOnTap:" destination="3ma-da-Ffa" id="0Wc-Rb-GJh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="cosmosView" destination="Z0p-fA-gsp" id="ZdV-rh-iSq"/>
+                        <outlet property="difficultyIconContainer" destination="jLs-Pc-zaT" id="FGf-NX-jiD"/>
                         <outlet property="distanceLabel" destination="LZ3-va-QPs" id="Uh6-ho-0Zw"/>
                         <outlet property="estimatedDurationLabel" destination="qcr-Cs-pqX" id="4Yw-6K-N7S"/>
                         <outlet property="hikingRouteDescriptionLabel" destination="Mf3-ur-kEh" id="yq8-i5-YtC"/>
                         <outlet property="hikingRouteDetailScrollview" destination="4DV-MA-AAY" id="bT1-Pz-5N9"/>
                         <outlet property="hikingRouteNameLabel" destination="DOH-oC-oX5" id="OHc-ff-O2g"/>
+                        <outlet property="likeHikingRouteBarButtonItem" destination="RTD-FQ-KE7" id="hfg-Zd-W41"/>
                         <outlet property="locationLabel" destination="nqO-Rk-l08" id="obj-wp-dfp"/>
                         <outlet property="mapview" destination="yHE-Ho-Oi1" id="hEu-Dz-D7c"/>
-                        <outlet property="ratingStarsContainer" destination="jLs-Pc-zaT" id="XJW-vX-fBm"/>
                         <outlet property="routeTypeLabel" destination="69i-RA-dha" id="mBr-a2-Vle"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUS-bV-zb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3708" y="-1498"/>
+            <point key="canvasLocation" x="3708" y="-1498.2008995502249"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -1952,14 +1983,15 @@
     <resources>
         <image name="Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg" width="500" height="281"/>
         <image name="backgorund_1.png" width="426" height="658"/>
-        <image name="empty_star" width="512" height="512"/>
+        <image name="heart" catalog="system" width="64" height="54"/>
         <image name="hiking_route" width="30" height="30"/>
         <image name="hiking_tour" width="30" height="30"/>
         <image name="login_register_button_background.png" width="405" height="73"/>
         <image name="logo_1x_2.png" width="512" height="622"/>
         <image name="recommendation" width="30" height="30"/>
-        <image name="star" width="512" height="512"/>
         <image name="textfield_bg.png" width="392" height="84"/>
+        <image name="weakness_empty" width="743" height="1068"/>
+        <image name="weakness_fill" width="743" height="1068"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ebP-M6-tQo"/>

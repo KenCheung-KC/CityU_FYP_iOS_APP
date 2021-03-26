@@ -32,4 +32,6 @@ struct HikingRoute: Codable {
     var endlongitude: Double
     var createdat: String
     var deletedat: String?
+    var userrating: Int?
+    var userliked: Bool?
 }
