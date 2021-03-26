@@ -46,6 +46,7 @@
 		3AF17C6D25D5B7F30027A70D /* HikingRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C6C25D5B7F30027A70D /* HikingRoute.swift */; };
 		3AF17C6F25D64BAB0027A70D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C6E25D64BAB0027A70D /* User.swift */; };
 		3AF17C7225D64C890027A70D /* HikingRouteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF17C7125D64C890027A70D /* HikingRouteItemCell.swift */; };
+		605296D58B7B0D732EF42D8C /* Pods_Cityu_FYP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90F368F4EDF5FC7F98CF8FD /* Pods_Cityu_FYP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,9 @@
 		3AF17C6C25D5B7F30027A70D /* HikingRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingRoute.swift; sourceTree = "<group>"; };
 		3AF17C6E25D64BAB0027A70D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3AF17C7125D64C890027A70D /* HikingRouteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingRouteItemCell.swift; sourceTree = "<group>"; };
+		472566231352581C1394E990 /* Pods-Cityu_FYP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cityu_FYP.debug.xcconfig"; path = "Target Support Files/Pods-Cityu_FYP/Pods-Cityu_FYP.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C57BF765AAA2360AC7F661 /* Pods-Cityu_FYP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cityu_FYP.release.xcconfig"; path = "Target Support Files/Pods-Cityu_FYP/Pods-Cityu_FYP.release.xcconfig"; sourceTree = "<group>"; };
+		D90F368F4EDF5FC7F98CF8FD /* Pods_Cityu_FYP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cityu_FYP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605296D58B7B0D732EF42D8C /* Pods_Cityu_FYP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A1F39FCE2F9294573CDD3AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				472566231352581C1394E990 /* Pods-Cityu_FYP.debug.xcconfig */,
+				C1C57BF765AAA2360AC7F661 /* Pods-Cityu_FYP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3A388CE625F37F7E009069BC /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +198,8 @@
 			children = (
 				3AADB6B625BB437E0044850C /* Cityu_FYP */,
 				3AADB6B525BB437E0044850C /* Products */,
+				1A1F39FCE2F9294573CDD3AF /* Pods */,
+				7974C279836F632A33921C2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +255,14 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
+		7974C279836F632A33921C2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D90F368F4EDF5FC7F98CF8FD /* Pods_Cityu_FYP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AADB6CB25BB43800044850C /* Build configuration list for PBXNativeTarget "Cityu_FYP" */;
 			buildPhases = (
+				BFB8FCC9FF15A6722067F1D7 /* [CP] Check Pods Manifest.lock */,
 				3AADB6B025BB437E0044850C /* Sources */,
 				3AADB6B125BB437E0044850C /* Frameworks */,
 				3AADB6B225BB437E0044850C /* Resources */,
+				EA966D1F4F478E04910B13D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,6 +337,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BFB8FCC9FF15A6722067F1D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cityu_FYP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA966D1F4F478E04910B13D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cityu_FYP/Pods-Cityu_FYP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cityu_FYP/Pods-Cityu_FYP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cityu_FYP/Pods-Cityu_FYP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3AADB6B025BB437E0044850C /* Sources */ = {
@@ -487,6 +556,7 @@
 		};
 		3AADB6CC25BB43800044850C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 472566231352581C1394E990 /* Pods-Cityu_FYP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +576,7 @@
 		};
 		3AADB6CD25BB43800044850C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C57BF765AAA2360AC7F661 /* Pods-Cityu_FYP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

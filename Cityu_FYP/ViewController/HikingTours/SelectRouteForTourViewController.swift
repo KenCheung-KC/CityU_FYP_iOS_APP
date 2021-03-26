@@ -32,17 +32,17 @@ class SelectRouteForTourViewController: UIViewController, UITableViewDelegate, U
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SelectRouteForTourCell", for: indexPath) as! SelectRouteForTourTableViewCell
-        let starsContainer = cell.subviews[0].subviews[1]
+        let difficultyContainer = cell.subviews[0].subviews[1]
         let routeName = hikingRoutes[indexPath.row].name
         let stars = hikingRoutes[indexPath.row].stars
         
         cell.hikingRouteNameLabel.text = routeName
         for i in 0...4 {
-            let imageView = starsContainer.subviews[i] as! UIImageView
+            let imageView = difficultyContainer.subviews[i] as! UIImageView
             if (i < stars) {
-                imageView.image = UIImage(named: "star")
+                imageView.image = UIImage(named: "weakness_fill")
             } else {
-                imageView.image = UIImage(named: "empty_star")
+                imageView.image = UIImage(named: "weakness_empty")
             }
         }
 

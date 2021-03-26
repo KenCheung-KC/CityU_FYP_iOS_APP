@@ -53,3 +53,7 @@ struct CreateOrEditTourResponse: Codable {
     var message: String
 }
 
+struct RateForHikingRouteResponse: Codable {
+    var message: String
+}
+

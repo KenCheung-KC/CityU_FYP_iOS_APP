@@ -15,8 +15,8 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     
     @IBOutlet weak var hikingRouteTableView: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         getHikingRoutes()
         hikingRouteTableView.delegate = self
         hikingRouteTableView.dataSource = self
@@ -24,6 +24,17 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
         refreshControl = UIRefreshControl()
         hikingRouteTableView.addSubview(refreshControl)
         refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        getHikingRoutes()
+//        hikingRouteTableView.delegate = self
+//        hikingRouteTableView.dataSource = self
+//
+//        refreshControl = UIRefreshControl()
+//        hikingRouteTableView.addSubview(refreshControl)
+//        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -45,9 +56,9 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
             let starsContainer = cell.ratingStarContainerView
             let starImageView = starsContainer?.subviews[n] as! UIImageView
             if (n < rating) {
-                starImageView.image = UIImage(named: "star")
+                starImageView.image = UIImage(named: "weakness_fill")
             } else {
-                starImageView.image = UIImage(named: "empty_star")
+                starImageView.image = UIImage(named: "weakness_empty")
             }
         }
         
