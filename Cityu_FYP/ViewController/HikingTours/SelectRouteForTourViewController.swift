@@ -50,7 +50,6 @@ class SelectRouteForTourViewController: UIViewController, UITableViewDelegate, U
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("aass")
         selectedRoute = hikingRoutes[indexPath.row]
         performSegue(withIdentifier: "PassHikingRouteIdToCreateTourVC", sender: self)
     }

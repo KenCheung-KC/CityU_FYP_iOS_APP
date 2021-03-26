@@ -939,7 +939,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="myM-eC-V2m"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BUY-zA-vzm"/>
+                    <navigationItem key="navigationItem" id="BUY-zA-vzm">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="heart" catalog="system" id="RTD-FQ-KE7">
+                            <connections>
+                                <action selector="likeHikingRouteBarButtonOnTap:" destination="3ma-da-Ffa" id="0Wc-Rb-GJh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cosmosView" destination="Z0p-fA-gsp" id="ZdV-rh-iSq"/>
                         <outlet property="difficultyIconContainer" destination="jLs-Pc-zaT" id="FGf-NX-jiD"/>
@@ -948,6 +954,7 @@
                         <outlet property="hikingRouteDescriptionLabel" destination="Mf3-ur-kEh" id="yq8-i5-YtC"/>
                         <outlet property="hikingRouteDetailScrollview" destination="4DV-MA-AAY" id="bT1-Pz-5N9"/>
                         <outlet property="hikingRouteNameLabel" destination="DOH-oC-oX5" id="OHc-ff-O2g"/>
+                        <outlet property="likeHikingRouteBarButtonItem" destination="RTD-FQ-KE7" id="hfg-Zd-W41"/>
                         <outlet property="locationLabel" destination="nqO-Rk-l08" id="obj-wp-dfp"/>
                         <outlet property="mapview" destination="yHE-Ho-Oi1" id="hEu-Dz-D7c"/>
                         <outlet property="routeTypeLabel" destination="69i-RA-dha" id="mBr-a2-Vle"/>
@@ -1976,6 +1983,7 @@
     <resources>
         <image name="Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg" width="500" height="281"/>
         <image name="backgorund_1.png" width="426" height="658"/>
+        <image name="heart" catalog="system" width="64" height="54"/>
         <image name="hiking_route" width="30" height="30"/>
         <image name="hiking_tour" width="30" height="30"/>
         <image name="login_register_button_background.png" width="405" height="73"/>

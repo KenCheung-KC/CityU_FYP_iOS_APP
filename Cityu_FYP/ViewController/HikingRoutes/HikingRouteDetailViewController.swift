@@ -14,6 +14,7 @@ class HikingRouteDetailViewController: UIViewController, MKMapViewDelegate {
 
     var hikingRouteDetail: HikingRoute?
     var rating: Double?
+//    var liked: Bool?
     
     @IBOutlet weak var mapview: MKMapView!
 //    @IBOutlet weak var ratingStarsContainer: UIView!
@@ -26,6 +27,7 @@ class HikingRouteDetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var hikingRouteDetailScrollview: UIScrollView!
     @IBOutlet weak var hikingRouteNameLabel: UILabel!
     @IBOutlet weak var cosmosView: CosmosView!
+    @IBOutlet weak var likeHikingRouteBarButtonItem: UIBarButtonItem!
     
     
     override func viewDidLoad() {
@@ -87,11 +89,13 @@ class HikingRouteDetailViewController: UIViewController, MKMapViewDelegate {
         
         cosmosView.settings.starSize = 30
         cosmosView.didFinishTouchingCosmos = { rating in
-            print("rating: \(rating)")
             self.rating = rating
             self.rateForHikingRoute(rating: Int(self.rating!))
         }
         
+        if let liked = hikingRouteDetail?.userliked {
+            setUserLikedBarButtonItem(liked: liked)
+        }
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -168,4 +172,45 @@ class HikingRouteDetailViewController: UIViewController, MKMapViewDelegate {
         
         task.resume()
     }
+    
+    @IBAction func likeHikingRouteBarButtonOnTap(_ sender: Any) {
+        likeHikingRoute()
+        var liked = hikingRouteDetail!.userliked!
+        liked = !liked
+        hikingRouteDetail!.userliked = liked
+        setUserLikedBarButtonItem(liked: liked)
+    }
+    
+    func setUserLikedBarButtonItem(liked: Bool) {
+        if(liked){
+            likeHikingRouteBarButtonItem.image = UIImage(systemName: "heart.fill")
+        } else {
+            likeHikingRouteBarButtonItem.image = UIImage(systemName: "heart")
+        }
+    }
+    
+    func likeHikingRoute() {
+        showSpinner(vc: self)
+        guard let url = URL(string: "\(baseUrl)/hikingRoute/likeHikingRoute/\(hikingRouteDetail!.id)") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "PUT"
+        request.setValue(JWT_token!, forHTTPHeaderField: "Authorization")
+        let task = URLSession.shared.dataTask(with: request){
+            (data, response, err) in
+            do {
+                let responseFromServer = try JSONDecoder().decode(LikeForHikingRouteResponse.self, from: data!)
+                let messageFromServer = responseFromServer.message
+                print("message from server: \(messageFromServer)")
+                
+                DispatchQueue.main.sync {
+                    self.removeSpinner(vc: self)
+                }
+            } catch let err {
+                print("err from likeHikingRoute function: \(err)")
+            }
+        }
+        task.resume()
+    }
+    
+    
 }
