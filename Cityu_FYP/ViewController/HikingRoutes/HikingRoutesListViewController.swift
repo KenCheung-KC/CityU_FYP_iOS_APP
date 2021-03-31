@@ -20,21 +20,14 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
         getHikingRoutes()
         hikingRouteTableView.delegate = self
         hikingRouteTableView.dataSource = self
-        
-        refreshControl = UIRefreshControl()
-        hikingRouteTableView.addSubview(refreshControl)
-        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        getHikingRoutes()
-//        hikingRouteTableView.delegate = self
-//        hikingRouteTableView.dataSource = self
-//
-//        refreshControl = UIRefreshControl()
-//        hikingRouteTableView.addSubview(refreshControl)
-//        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)
+        
+        refreshControl = UIRefreshControl()
+        hikingRouteTableView.addSubview(refreshControl)
+        refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -50,7 +43,7 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
         
         cell.hikingRouteNameLabel.text = hikingRoutes[indexPath.row].name
         cell.hikingRouteDescription.text = hikingRoutes[indexPath.row].description
-
+        
         let rating = hikingRoutes[indexPath.row].stars
         for n in 0...4 {
             let starsContainer = cell.ratingStarContainerView
@@ -90,7 +83,7 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     
     func getHikingRoutes() {
         showSpinner(vc: self)
-        hikingRoutes = []
+        self.hikingRoutes = []
         guard let url = URL(string: "\(baseUrl)/hikingRoute/hikingRouteList") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -119,11 +112,11 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         // Do some reloading of data and update the table view's data source
         // Fetch more objects from a web service, for example...
-
+        
         getHikingRoutes()
         // Simply adding an object to the data source for this example
         print("table refreshed!")
-
+        
         refreshControl.endRefreshing()
     }
     
@@ -134,10 +127,10 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
  Can get the hikingRoutes data from server now
  
  TODO:
-    1. Display custom tableview cell - finished
-    2. Feed data to tableview cell to display the information - finished
-    3. Handle jwt token, append the token to authorization header automatically? - to be finish
-    4. Pass data to hiking route detail page and display it
-    5. Mapview of hiking route detail page
+ 1. Display custom tableview cell - finished
+ 2. Feed data to tableview cell to display the information - finished
+ 3. Handle jwt token, append the token to authorization header automatically? - to be finish
+ 4. Pass data to hiking route detail page and display it
+ 5. Mapview of hiking route detail page
  
  */
