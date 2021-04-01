@@ -16,7 +16,7 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     @IBOutlet weak var hikingRouteTableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
+        super.viewWillAppear(animated)
         getHikingRoutes()
         hikingRouteTableView.delegate = self
         hikingRouteTableView.dataSource = self
