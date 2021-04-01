@@ -23,6 +23,7 @@ class CreateTourViewController: UIViewController {
     @IBOutlet weak var createTourButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if let hikingRoute = selectedHikingRoute {
             let name = hikingRoute.name
             chooseHikingRouteButton.setTitle(name, for: .normal)

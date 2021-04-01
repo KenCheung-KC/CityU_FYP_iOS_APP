@@ -15,12 +15,17 @@ class LikedRoutesListViewController: UIViewController, UITableViewDataSource, UI
     
     @IBOutlet weak var likedRoutesTableView: UITableView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getLikedRoutes()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         likedRoutesTableView.delegate = self
         likedRoutesTableView.dataSource = self
         
-        getLikedRoutes()
+//        getLikedRoutes()
         
         refreshControl = UIRefreshControl()
         likedRoutesTableView.addSubview(refreshControl)
