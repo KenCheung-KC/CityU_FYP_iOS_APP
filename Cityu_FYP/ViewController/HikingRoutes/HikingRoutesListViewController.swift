@@ -18,13 +18,12 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getHikingRoutes()
-        hikingRouteTableView.delegate = self
-        hikingRouteTableView.dataSource = self
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        hikingRouteTableView.delegate = self
+        hikingRouteTableView.dataSource = self
         refreshControl = UIRefreshControl()
         hikingRouteTableView.addSubview(refreshControl)
         refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)

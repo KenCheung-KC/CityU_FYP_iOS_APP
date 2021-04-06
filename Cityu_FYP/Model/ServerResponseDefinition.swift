@@ -65,3 +65,8 @@ struct GetLikedHikingRoutesResponse: Codable {
     var message: String
     var likedHikingRoutes: [HikingRoute]
 }
+
+struct RecommendedRoutesResponse: Codable {
+    var message: String
+    var recommendedRoutes: [HikingRoute]
+}

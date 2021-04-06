@@ -50,6 +50,7 @@ class LoginPageViewController: UIViewController, UITextFieldDelegate {
                     let userFromServer = loginResponseFromServer.user
                     JWT_token = token
                     user = userFromServer
+                    print("JWT_token \(JWT_token)")
                     DispatchQueue.main.async {
                         self.performSegue(withIdentifier: "GoToMainPage", sender: self)
                     }
