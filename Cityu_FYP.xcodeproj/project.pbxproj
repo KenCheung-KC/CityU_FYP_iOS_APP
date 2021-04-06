@@ -29,6 +29,8 @@
 		3A8C1F3C25C56D2F00DFCE97 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C1F3B25C56D2F00DFCE97 /* LoginPageViewController.swift */; };
 		3A8C1F3F25C56EE400DFCE97 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C1F3E25C56EE400DFCE97 /* RegisterViewController.swift */; };
 		3A8C1F4125C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F4025C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg */; };
+		3A92E82E2617781500F99A33 /* RecommendationRoutesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E82D2617781500F99A33 /* RecommendationRoutesListViewController.swift */; };
+		3A92E83026177CCF00F99A33 /* RecommendationRouteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E82F26177CCF00F99A33 /* RecommendationRouteItemCell.swift */; };
 		3AADB6B825BB437E0044850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6B725BB437E0044850C /* AppDelegate.swift */; };
 		3AADB6BA25BB437E0044850C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6B925BB437E0044850C /* SceneDelegate.swift */; };
 		3AADB6BC25BB437E0044850C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6BB25BB437E0044850C /* ViewController.swift */; };
@@ -74,6 +76,8 @@
 		3A8C1F3B25C56D2F00DFCE97 /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		3A8C1F3E25C56EE400DFCE97 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3A8C1F4025C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg"; sourceTree = "<group>"; };
+		3A92E82D2617781500F99A33 /* RecommendationRoutesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationRoutesListViewController.swift; sourceTree = "<group>"; };
+		3A92E82F26177CCF00F99A33 /* RecommendationRouteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationRouteItemCell.swift; sourceTree = "<group>"; };
 		3AADB6B425BB437E0044850C /* Cityu_FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cityu_FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AADB6B725BB437E0044850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AADB6B925BB437E0044850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -191,10 +195,19 @@
 				3A388CE825F37F9B009069BC /* HikingRoutes */,
 				3A388CE925F37FAD009069BC /* HikingTours */,
 				3A388CEA25F37FB9009069BC /* More */,
+				3A92E82C261775B500F99A33 /* Recommendation */,
 				3AADB6BB25BB437E0044850C /* ViewController.swift */,
 				3AE9F1AC25DD036B00E7670E /* ViewController2.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3A92E82C261775B500F99A33 /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				3A92E82D2617781500F99A33 /* RecommendationRoutesListViewController.swift */,
+			);
+			path = Recommendation;
 			sourceTree = "<group>";
 		};
 		3AADB6AB25BB437E0044850C = {
@@ -256,6 +269,7 @@
 				3A388CE025EFBB42009069BC /* MyInformationTableViewCell.swift */,
 				3A630B0A25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift */,
 				3A8742C4260E4AB500122212 /* LikedRouteTableViewCell.swift */,
+				3A92E82F26177CCF00F99A33 /* RecommendationRouteItemCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -390,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A92E83026177CCF00F99A33 /* RecommendationRouteItemCell.swift in Sources */,
 				3A8742C5260E4AB500122212 /* LikedRouteTableViewCell.swift in Sources */,
 				3A1FB09725ED5B2600929CB4 /* DateAndTime.swift in Sources */,
 				3A8C1F3C25C56D2F00DFCE97 /* LoginPageViewController.swift in Sources */,
@@ -415,6 +430,7 @@
 				3A8BB55A25E5425D0053A8F5 /* HikingTourDetailsViewController.swift in Sources */,
 				3AF17C6825D3B7DD0027A70D /* HikingRoutesListViewController.swift in Sources */,
 				3AD9A4A525EE6F1300ECD9DE /* HostedTourDetailCell.swift in Sources */,
+				3A92E82E2617781500F99A33 /* RecommendationRoutesListViewController.swift in Sources */,
 				3AE9F1AF25DD1A7500E7670E /* HikingTourListViewController.swift in Sources */,
 				3AADB6BA25BB437E0044850C /* SceneDelegate.swift in Sources */,
 				3AD9A4A325EE6EBE00ECD9DE /* HostedToursListViewController.swift in Sources */,

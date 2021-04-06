@@ -34,4 +34,5 @@ struct HikingRoute: Codable {
     var deletedat: String?
     var userrating: Int?
     var userliked: Bool?
+    var jaccardsimilarityscore: Double?
 }
