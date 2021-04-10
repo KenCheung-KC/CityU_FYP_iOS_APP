@@ -36,6 +36,37 @@ class RecommendationRoutesListViewController: UIViewController, UITableViewDataS
         let recommendedRouteName = recommendedRoutes[indexPath.row].name
         let recommendedRouteDescription = recommendedRoutes[indexPath.row].description
         let imageUrl = recommendedRoutes[indexPath.row].hikingrouteimage
+        let recommendedByContentBased = recommendedRoutes[indexPath.row].recommendedbycontentbased
+        let recommendedByCollaborativeFiltering = recommendedRoutes[indexPath.row].recommendedbycollaborativefiltering
+        let recommendedForColdStart = recommendedRoutes[indexPath.row].recommendedforcoldstart
+        print("recommendedforcoldstar: \(recommendedForColdStart)")
+        // some default configuration of UI components
+        cell.recommendedByCBLabel.isHidden = true
+        cell.recommendedByCFLabel.isHidden = true
+        cell.recommendedForColdStartLabel.isHidden = true
+        cell.recommendedByCFLabel.frame.origin.x = 30
+        
+        if let cb = recommendedByContentBased {
+            if(cb == true){
+                cell.recommendedByCBLabel.isHidden = false
+            }
+        }
+
+        if let cf = recommendedByCollaborativeFiltering {
+            if(cf == true){
+                cell.recommendedByCFLabel.isHidden = false
+                if(cell.recommendedByCBLabel.isHidden) {
+                    cell.recommendedByCFLabel.frame.origin.x = 0
+                }
+            }
+        }
+        
+        if let cs = recommendedForColdStart {
+            if (cs == true) {
+                cell.recommendedForColdStartLabel.frame.origin.x = 0
+                cell.recommendedForColdStartLabel.isHidden = false
+            }
+        }
         
         cell.recommendationRouteNameLabel.text = recommendedRouteName
         cell.recommendationRouteDescriptionLabel.text = recommendedRouteDescription
