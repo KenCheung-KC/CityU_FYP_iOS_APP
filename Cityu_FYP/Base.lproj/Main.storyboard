@@ -55,7 +55,7 @@
                                 <rect key="frame" x="52" y="402" width="281" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIB-zV-wzS">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kam9" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIB-zV-wzS">
                                 <rect key="frame" x="78" y="330" width="226" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,7 +63,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-tR-88k">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kam9" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-tR-88k">
                                 <rect key="frame" x="79" y="421" width="226" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -1481,22 +1481,22 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecommendationListItemCell" rowHeight="150" id="A5O-Ne-Mwx" customClass="RecommendationRouteItemCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecommendationListItemCell" rowHeight="180" id="A5O-Ne-Mwx" customClass="RecommendationRouteItemCell" customModule="Cityu_FYP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A5O-Ne-Mwx" id="7lq-H4-YcX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aberdeen-Reservoir-IMAGE-1-nick-KITO" translatesAutoresizingMaskIntoConstraints="NO" id="HJv-H8-aOg">
-                                                    <rect key="frame" x="20" y="11" width="140" height="128"/>
+                                                    <rect key="frame" x="20" y="11" width="140" height="118"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="0WR-1T-c15"/>
                                                         <constraint firstAttribute="width" constant="140" id="V6Y-d3-NWE"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ni4-zn-ll4">
-                                                    <rect key="frame" x="165" y="11" width="195" height="128"/>
+                                                    <rect key="frame" x="165" y="11" width="195" height="118"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aberdeen Reservoir" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyS-h4-OwH">
                                                             <rect key="frame" x="0.0" y="0.0" width="195" height="20"/>
@@ -1508,7 +1508,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5r-DS-RV7">
-                                                            <rect key="frame" x="0.0" y="28" width="195" height="100"/>
+                                                            <rect key="frame" x="0.0" y="28" width="195" height="90"/>
                                                             <string key="text">Aberdeen Reservoirs, located in Aberdeen Country Park, are a set of two reservoirs, Upper and Lower Aberdeen Reservoirs. They are built in 1931 and 1890 respectively. The dams of both reservoirs, as well as the bridge and valve house of Upper Aberdeen Reservoir, are declared as monuments.
 
 Barbecue sites are established near the reservoirs, along with the Aberdeen Nature Trail and Aberdeen Tree Walk. There is Rhodoleia championii (commonly known as 'Rhodoleia' or 'Hong Kong Rose'), a rare tree.
@@ -1528,21 +1528,55 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                                         <constraint firstAttribute="trailing" secondItem="l5r-DS-RV7" secondAttribute="trailing" id="rtt-pv-DWU"/>
                                                     </constraints>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IlL-Qr-HLy" userLabel="Notation View">
+                                                    <rect key="frame" x="20" y="134" width="335" height="35"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vO0-JD-EFW">
+                                                            <rect key="frame" x="0.0" y="0.0" width="28" height="35"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUU-Vx-NBO">
+                                                            <rect key="frame" x="38" y="0.0" width="26" height="35"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXA-ds-7fQ">
+                                                            <rect key="frame" x="71" y="0.0" width="28" height="35"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="HJv-H8-aOg" firstAttribute="top" secondItem="7lq-H4-YcX" secondAttribute="topMargin" id="3OW-Bi-dEE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IlL-Qr-HLy" secondAttribute="trailing" constant="5" id="3jj-5e-2Gs"/>
+                                                <constraint firstItem="IlL-Qr-HLy" firstAttribute="leading" secondItem="7lq-H4-YcX" secondAttribute="leadingMargin" constant="5" id="LuI-7c-aJT"/>
                                                 <constraint firstItem="Ni4-zn-ll4" firstAttribute="top" secondItem="7lq-H4-YcX" secondAttribute="topMargin" id="NES-yG-ems"/>
                                                 <constraint firstItem="HJv-H8-aOg" firstAttribute="leading" secondItem="7lq-H4-YcX" secondAttribute="leadingMargin" constant="5" id="NEW-JY-ZWM"/>
+                                                <constraint firstItem="IlL-Qr-HLy" firstAttribute="bottom" secondItem="7lq-H4-YcX" secondAttribute="bottomMargin" id="R14-9L-24U"/>
                                                 <constraint firstItem="Ni4-zn-ll4" firstAttribute="leading" secondItem="HJv-H8-aOg" secondAttribute="trailing" constant="5" id="aJL-sz-zDj"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Ni4-zn-ll4" secondAttribute="trailing" id="iin-td-vJf"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Ni4-zn-ll4" secondAttribute="bottom" id="nRv-aJ-TQa"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="HJv-H8-aOg" secondAttribute="bottom" id="yFh-N0-QaF"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ni4-zn-ll4" secondAttribute="bottom" constant="40" id="nRv-aJ-TQa"/>
+                                                <constraint firstItem="IlL-Qr-HLy" firstAttribute="top" secondItem="HJv-H8-aOg" secondAttribute="bottom" constant="5" id="oYG-Ne-DIp"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HJv-H8-aOg" secondAttribute="bottom" constant="40" id="yFh-N0-QaF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="recommendationNotationView" destination="IlL-Qr-HLy" id="JXV-v7-Bbr"/>
                                             <outlet property="recommendationRouteDescriptionLabel" destination="l5r-DS-RV7" id="D3b-am-pGf"/>
                                             <outlet property="recommendationRouteImage" destination="HJv-H8-aOg" id="tbX-6e-WfN"/>
                                             <outlet property="recommendationRouteNameLabel" destination="QyS-h4-OwH" id="em2-iM-WLc"/>
+                                            <outlet property="recommendedByCBLabel" destination="vO0-JD-EFW" id="io0-ie-FT7"/>
+                                            <outlet property="recommendedByCFLabel" destination="EUU-Vx-NBO" id="uwO-Bi-dhI"/>
+                                            <outlet property="recommendedForColdStartLabel" destination="jXA-ds-7fQ" id="sCW-Mw-mBi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1581,14 +1615,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JoinedToursCell" id="5pj-yv-SYS">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5pj-yv-SYS" id="cXC-A0-rEz">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joined tours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8X-MG-qp3">
-                                                    <rect key="frame" x="15" y="11" width="95" height="21.5"/>
+                                                    <rect key="frame" x="15" y="11" width="95" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1602,14 +1636,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HostedToursCell" id="EI4-Ct-UqM">
-                                        <rect key="frame" x="0.0" y="99" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="98.5" width="375" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EI4-Ct-UqM" id="y9F-pE-wNj">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hosted tours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqW-BP-1nf">
-                                                    <rect key="frame" x="15" y="11" width="99.5" height="21.5"/>
+                                                    <rect key="frame" x="15" y="11" width="99.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1623,7 +1657,7 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LikedRoutesCell" id="fhM-Xc-iTB" userLabel="LikedRoutesCell">
-                                        <rect key="frame" x="0.0" y="142.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="141.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fhM-Xc-iTB" id="rQR-wN-iAk">
                                             <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
@@ -1640,14 +1674,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyInformationCell" id="HPq-Vv-lsO" userLabel="MyInformationCell">
-                                        <rect key="frame" x="0.0" y="186" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="185" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HPq-Vv-lsO" id="St7-c6-z9U">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU1-X8-rsz">
-                                                    <rect key="frame" x="15" y="11" width="114.5" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="114.5" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1661,14 +1695,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LogOutCell" id="WLC-F2-AuF" userLabel="LogoutCell">
-                                        <rect key="frame" x="0.0" y="229" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="228.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WLC-F2-AuF" id="9Pj-HV-ah8">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtY-7X-arc">
-                                                    <rect key="frame" x="15" y="11" width="53.5" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="53.5" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2247,7 +2281,7 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ebP-M6-tQo"/>
-        <segue reference="gFo-kB-d6i"/>
+        <segue reference="gBW-GG-gBI"/>
         <segue reference="N4T-kQ-zRx"/>
     </inferredMetricsTieBreakers>
 </document>

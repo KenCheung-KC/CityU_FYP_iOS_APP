@@ -13,6 +13,10 @@ class RecommendationRouteItemCell: UITableViewCell {
     @IBOutlet weak var recommendationRouteImage: UIImageView!
     @IBOutlet weak var recommendationRouteNameLabel: UILabel!
     @IBOutlet weak var recommendationRouteDescriptionLabel: UILabel!
+    @IBOutlet weak var recommendationNotationView: UIView!
+    @IBOutlet weak var recommendedByCBLabel: UILabel!
+    @IBOutlet weak var recommendedByCFLabel: UILabel!
+    @IBOutlet weak var recommendedForColdStartLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

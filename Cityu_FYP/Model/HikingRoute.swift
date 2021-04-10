@@ -35,4 +35,7 @@ struct HikingRoute: Codable {
     var userrating: Int?
     var userliked: Bool?
     var jaccardsimilarityscore: Double?
+    var recommendedbycontentbased: Bool?
+    var recommendedbycollaborativefiltering: Bool?
+    var recommendedforcoldstart: Bool?
 }
