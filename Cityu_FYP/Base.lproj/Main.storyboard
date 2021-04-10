@@ -55,7 +55,7 @@
                                 <rect key="frame" x="52" y="402" width="281" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kam9" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIB-zV-wzS">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIB-zV-wzS">
                                 <rect key="frame" x="78" y="330" width="226" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,7 +63,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="kam9" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-tR-88k">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-tR-88k">
                                 <rect key="frame" x="79" y="421" width="226" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -290,9 +290,9 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnA-Ie-f4t" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="737"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="zUX-j5-SxP">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="zUX-j5-SxP" userLabel="Tour name Stack View">
                                                 <rect key="frame" x="15" y="10" width="345" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be3-5E-FfS">
@@ -311,7 +311,7 @@
                                                     <constraint firstAttribute="height" constant="40" id="vIF-RS-Ysr"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Ews-aK-zQw">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Ews-aK-zQw" userLabel="Choose hiking route Stack View">
                                                 <rect key="frame" x="15" y="60" width="345" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Hiking Route:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="trU-CE-RpD">
@@ -339,17 +339,20 @@
                                                     <constraint firstAttribute="height" constant="40" id="hst-JC-ZOU"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="hYG-DA-Sld">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="hYG-DA-Sld" userLabel="Max participant Stack View">
                                                 <rect key="frame" x="15" y="110" width="345" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max. participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIS-4N-hVf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k0O-gU-DD2">
-                                                        <rect key="frame" x="218.5" y="0.0" width="126.5" height="40"/>
+                                                        <rect key="frame" x="245" y="0.0" width="100" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="D7i-rQ-weh"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -358,17 +361,20 @@
                                                     <constraint firstAttribute="height" constant="40" id="CRu-pM-5qd"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="wLN-mR-8IR">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="wLN-mR-8IR" userLabel="Minimum Participant Stack View">
                                                 <rect key="frame" x="15" y="160" width="345" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min. participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDP-C7-amC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z5k-rl-ndE">
-                                                        <rect key="frame" x="214.5" y="0.0" width="130.5" height="40"/>
+                                                        <rect key="frame" x="245" y="0.0" width="100" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="Mxs-AB-lhR"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -377,8 +383,27 @@
                                                     <constraint firstAttribute="height" constant="40" id="Bcc-bi-m9c"/>
                                                 </constraints>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="180" translatesAutoresizingMaskIntoConstraints="NO" id="10y-2K-zXg" userLabel="Price Stack View">
+                                                <rect key="frame" x="15" y="210" width="345" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYX-ii-hHt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAh-X1-mea">
+                                                        <rect key="frame" x="245" y="0.0" width="100" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="JQc-SZ-fhi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zbh-Kv-lZa" userLabel="Date And Time Stack View">
-                                                <rect key="frame" x="15" y="210" width="345" height="244.5"/>
+                                                <rect key="frame" x="15" y="254" width="345" height="244.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EN-QE-Z8h">
                                                         <rect key="frame" x="0.0" y="0.0" width="111.5" height="20.5"/>
@@ -396,7 +421,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A70-a5-ogJ" userLabel="Tour Descritpion Stack View">
-                                                <rect key="frame" x="15" y="464.5" width="345" height="148.5"/>
+                                                <rect key="frame" x="15" y="508.5" width="345" height="148.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9Z-c8-mza">
                                                         <rect key="frame" x="0.0" y="0.0" width="129" height="20.5"/>
@@ -422,7 +447,7 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFV-jE-oAo">
-                                                <rect key="frame" x="15" y="633" width="345" height="40"/>
+                                                <rect key="frame" x="15" y="677" width="345" height="40"/>
                                                 <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="GD4-1J-3ph"/>
@@ -439,12 +464,14 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="hYG-DA-Sld" firstAttribute="leading" secondItem="MnA-Ie-f4t" secondAttribute="leading" constant="15" id="15B-Q3-7F0"/>
-                                            <constraint firstItem="Zbh-Kv-lZa" firstAttribute="top" secondItem="wLN-mR-8IR" secondAttribute="bottom" constant="10" id="3zi-Ks-Hxy"/>
+                                            <constraint firstItem="Zbh-Kv-lZa" firstAttribute="top" secondItem="10y-2K-zXg" secondAttribute="bottom" constant="10" id="3zi-Ks-Hxy"/>
+                                            <constraint firstItem="10y-2K-zXg" firstAttribute="leading" secondItem="MnA-Ie-f4t" secondAttribute="leading" constant="15" id="4i8-Yk-Baq"/>
                                             <constraint firstAttribute="height" priority="250" constant="700" id="5HX-Gk-YVa"/>
                                             <constraint firstItem="zUX-j5-SxP" firstAttribute="leading" secondItem="MnA-Ie-f4t" secondAttribute="leading" constant="15" id="625-ZZ-Wjf"/>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MFV-jE-oAo" secondAttribute="bottom" constant="20" id="BDF-dn-1xC"/>
                                             <constraint firstAttribute="trailing" secondItem="hYG-DA-Sld" secondAttribute="trailing" constant="15" id="Bwh-LP-8uS"/>
                                             <constraint firstAttribute="trailing" secondItem="MFV-jE-oAo" secondAttribute="trailing" constant="15" id="Ktr-jK-NYe"/>
+                                            <constraint firstAttribute="trailing" secondItem="10y-2K-zXg" secondAttribute="trailing" constant="15" id="LfB-Oa-p0C"/>
                                             <constraint firstAttribute="trailing" secondItem="wLN-mR-8IR" secondAttribute="trailing" constant="15" id="Lkh-Jt-182"/>
                                             <constraint firstItem="zUX-j5-SxP" firstAttribute="top" secondItem="MnA-Ie-f4t" secondAttribute="top" constant="10" id="MU1-w7-yEE"/>
                                             <constraint firstItem="A70-a5-ogJ" firstAttribute="leading" secondItem="MnA-Ie-f4t" secondAttribute="leading" constant="15" id="MsR-mT-QsZ"/>
@@ -459,6 +486,7 @@
                                             <constraint firstAttribute="trailing" secondItem="zUX-j5-SxP" secondAttribute="trailing" constant="15" id="lMi-Hf-OdQ"/>
                                             <constraint firstAttribute="trailing" secondItem="Zbh-Kv-lZa" secondAttribute="trailing" constant="15" id="mLC-rb-0ZW"/>
                                             <constraint firstItem="wLN-mR-8IR" firstAttribute="top" secondItem="hYG-DA-Sld" secondAttribute="bottom" constant="10" id="mjE-Db-wad"/>
+                                            <constraint firstItem="10y-2K-zXg" firstAttribute="top" secondItem="wLN-mR-8IR" secondAttribute="bottom" constant="10" id="vn2-fv-91R"/>
                                             <constraint firstItem="wLN-mR-8IR" firstAttribute="leading" secondItem="MnA-Ie-f4t" secondAttribute="leading" constant="15" id="xKw-WW-cgM"/>
                                             <constraint firstItem="hYG-DA-Sld" firstAttribute="top" secondItem="Ews-aK-zQw" secondAttribute="bottom" constant="10" id="xOW-sb-uaJ"/>
                                         </constraints>
@@ -493,6 +521,7 @@
                         <outlet property="tourDatePicker" destination="glT-yf-4yi" id="Udd-Zl-fAU"/>
                         <outlet property="tourDescriptionTextView" destination="R8X-Xb-b3B" id="ZWi-Nc-RiP"/>
                         <outlet property="tourNameTextField" destination="R4i-dE-v2Z" id="UcB-hg-k5o"/>
+                        <outlet property="tourPriceTextField" destination="DAh-X1-mea" id="RQE-Ti-ES6"/>
                         <segue destination="1me-e7-9PN" kind="show" identifier="GoToSelectRouteForTour" id="nQg-52-ksO"/>
                         <segue destination="Iyx-ou-h1w" kind="unwind" identifier="GoBackToHikingToursList" unwindAction="unwindToHikingToursListVC:" id="rWI-NW-SLB"/>
                     </connections>
@@ -1213,8 +1242,25 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="259" translatesAutoresizingMaskIntoConstraints="NO" id="sRD-2q-8J8" userLabel="Price Stack View">
+                                                <rect key="frame" x="15" y="148.5" width="345" height="24"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnd-nt-quI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="$0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maH-0g-pSt">
+                                                        <rect key="frame" x="313.5" y="0.0" width="31.5" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="YmB-M8-UNV" userLabel="Min participant Stack View">
-                                                <rect key="frame" x="15" y="148.5" width="345" height="20.5"/>
+                                                <rect key="frame" x="15" y="182.5" width="345" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Min. Participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDK-OG-WrR">
                                                         <rect key="frame" x="0.0" y="0.0" width="132.5" height="20.5"/>
@@ -1231,7 +1277,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="YL8-fk-0NS" userLabel="Max participant Stack View">
-                                                <rect key="frame" x="15" y="179" width="345" height="20.5"/>
+                                                <rect key="frame" x="15" y="213" width="345" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Max. Participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxd-2W-hye">
                                                         <rect key="frame" x="0.0" y="0.0" width="136.5" height="20.5"/>
@@ -1248,7 +1294,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="UZD-BL-GGG" userLabel="Hiking route Stack View">
-                                                <rect key="frame" x="15" y="209.5" width="345" height="30"/>
+                                                <rect key="frame" x="15" y="243.5" width="345" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiking route:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-fU-SaH">
                                                         <rect key="frame" x="0.0" y="0.0" width="97.5" height="30"/>
@@ -1269,7 +1315,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QCS-0t-h0g" userLabel="join button Stack View">
-                                                <rect key="frame" x="15" y="249.5" width="345" height="48"/>
+                                                <rect key="frame" x="15" y="283.5" width="345" height="48"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAJ-MI-aEa">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="48"/>
@@ -1285,13 +1331,13 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="un7-n7-DBb">
-                                                <rect key="frame" x="15" y="307.5" width="345" height="20.5"/>
+                                                <rect key="frame" x="15" y="341.5" width="345" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-5F-GhK">
-                                                <rect key="frame" x="15" y="338" width="345" height="20.5"/>
+                                                <rect key="frame" x="15" y="372" width="345" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1325,16 +1371,19 @@
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zc3-5F-GhK" secondAttribute="bottom" constant="20" id="1vw-6N-aV1"/>
                                             <constraint firstItem="gTo-gP-bLl" firstAttribute="leading" secondItem="KWN-9f-ZYn" secondAttribute="leading" constant="15" id="4t5-eP-qfb"/>
                                             <constraint firstAttribute="trailing" secondItem="YmB-M8-UNV" secondAttribute="trailing" constant="15" id="4tK-Zj-fIg"/>
+                                            <constraint firstItem="sRD-2q-8J8" firstAttribute="leading" secondItem="KWN-9f-ZYn" secondAttribute="leading" constant="15" id="52D-DD-mFo"/>
                                             <constraint firstItem="UZD-BL-GGG" firstAttribute="top" secondItem="YL8-fk-0NS" secondAttribute="bottom" constant="10" id="6mp-3T-AVZ"/>
-                                            <constraint firstItem="YmB-M8-UNV" firstAttribute="top" secondItem="gTo-gP-bLl" secondAttribute="bottom" constant="10" id="CRN-76-iJo"/>
+                                            <constraint firstItem="YmB-M8-UNV" firstAttribute="top" secondItem="sRD-2q-8J8" secondAttribute="bottom" constant="10" id="CRN-76-iJo"/>
                                             <constraint firstAttribute="trailing" secondItem="zc3-5F-GhK" secondAttribute="trailing" constant="15" id="CWg-ns-til"/>
                                             <constraint firstItem="un7-n7-DBb" firstAttribute="trailing" secondItem="zc3-5F-GhK" secondAttribute="trailing" id="FhG-vJ-Fiy"/>
                                             <constraint firstItem="UZD-BL-GGG" firstAttribute="leading" secondItem="KWN-9f-ZYn" secondAttribute="leading" constant="15" id="GC8-ov-9NM"/>
                                             <constraint firstItem="un7-n7-DBb" firstAttribute="leading" secondItem="zc3-5F-GhK" secondAttribute="leading" id="HHp-PT-pzl"/>
                                             <constraint firstItem="USX-XZ-zkh" firstAttribute="top" secondItem="KWN-9f-ZYn" secondAttribute="top" constant="10" id="IIj-xf-IFy"/>
                                             <constraint firstItem="YL8-fk-0NS" firstAttribute="leading" secondItem="KWN-9f-ZYn" secondAttribute="leading" constant="15" id="LMJ-Ue-Dpz"/>
+                                            <constraint firstItem="sRD-2q-8J8" firstAttribute="top" secondItem="gTo-gP-bLl" secondAttribute="bottom" constant="10" id="Lwi-rf-uJo"/>
                                             <constraint firstItem="369-Vu-Vym" firstAttribute="leading" secondItem="KWN-9f-ZYn" secondAttribute="leading" constant="15" id="Lye-4e-3Jw"/>
                                             <constraint firstAttribute="trailing" secondItem="QCS-0t-h0g" secondAttribute="trailing" constant="15" id="OOC-ba-hdw"/>
+                                            <constraint firstAttribute="trailing" secondItem="sRD-2q-8J8" secondAttribute="trailing" constant="15" id="PgO-kP-Fr8"/>
                                             <constraint firstItem="gTo-gP-bLl" firstAttribute="top" secondItem="vHk-0d-515" secondAttribute="bottom" constant="10" id="QqF-w1-Zy3"/>
                                             <constraint firstItem="vHk-0d-515" firstAttribute="leading" secondItem="KWN-9f-ZYn" secondAttribute="leading" constant="15" id="Qth-yU-luX"/>
                                             <constraint firstItem="vHk-0d-515" firstAttribute="top" secondItem="369-Vu-Vym" secondAttribute="bottom" constant="10" id="SdL-y7-9bX"/>
@@ -1392,6 +1441,7 @@
                         <outlet property="hikingTourMaximumParticipantLabel" destination="DSB-81-dTb" id="yg7-Di-QNf"/>
                         <outlet property="hikingTourMinimumParticipantLabel" destination="tyE-VF-F6u" id="9lb-GA-ncB"/>
                         <outlet property="hikingTourNameLabel" destination="USX-XZ-zkh" id="yur-0s-K51"/>
+                        <outlet property="hikingTourPriceLabel" destination="maH-0g-pSt" id="Ed0-Ax-CPf"/>
                         <outlet property="hikingTourTimeLabel" destination="Si4-kZ-b8d" id="DvD-1E-sqb"/>
                         <outlet property="navigationBarEditButton" destination="qA6-2x-uLU" id="1Rr-z3-HHq"/>
                         <segue destination="3ma-da-Ffa" kind="show" identifier="GoToHikingRouteDetailFromHikingTour" id="gFo-kB-d6i"/>
@@ -1459,11 +1509,11 @@
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5r-DS-RV7">
                                                             <rect key="frame" x="0.0" y="28" width="195" height="100"/>
-                                                            <mutableString key="text">Aberdeen Reservoirs, located in Aberdeen Country Park, are a set of two reservoirs, Upper and Lower Aberdeen Reservoirs. They are built in 1931 and 1890 respectively. The dams of both reservoirs, as well as the bridge and valve house of Upper Aberdeen Reservoir, are declared as monuments.
+                                                            <string key="text">Aberdeen Reservoirs, located in Aberdeen Country Park, are a set of two reservoirs, Upper and Lower Aberdeen Reservoirs. They are built in 1931 and 1890 respectively. The dams of both reservoirs, as well as the bridge and valve house of Upper Aberdeen Reservoir, are declared as monuments.
 
 Barbecue sites are established near the reservoirs, along with the Aberdeen Nature Trail and Aberdeen Tree Walk. There is Rhodoleia championii (commonly known as 'Rhodoleia' or 'Hong Kong Rose'), a rare tree.
 
-Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn more about plants in Hong Kong through exhibitions.</mutableString>
+Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn more about plants in Hong Kong through exhibitions.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1531,14 +1581,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JoinedToursCell" id="5pj-yv-SYS">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5pj-yv-SYS" id="cXC-A0-rEz">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joined tours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8X-MG-qp3">
-                                                    <rect key="frame" x="15" y="11" width="95" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="95" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1552,14 +1602,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HostedToursCell" id="EI4-Ct-UqM">
-                                        <rect key="frame" x="0.0" y="98.5" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="99" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EI4-Ct-UqM" id="y9F-pE-wNj">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hosted tours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqW-BP-1nf">
-                                                    <rect key="frame" x="15" y="11" width="99.5" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="99.5" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1573,7 +1623,7 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LikedRoutesCell" id="fhM-Xc-iTB" userLabel="LikedRoutesCell">
-                                        <rect key="frame" x="0.0" y="141.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="142.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fhM-Xc-iTB" id="rQR-wN-iAk">
                                             <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
@@ -1590,14 +1640,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyInformationCell" id="HPq-Vv-lsO" userLabel="MyInformationCell">
-                                        <rect key="frame" x="0.0" y="185" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="186" width="375" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HPq-Vv-lsO" id="St7-c6-z9U">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU1-X8-rsz">
-                                                    <rect key="frame" x="15" y="11" width="114.5" height="21.5"/>
+                                                    <rect key="frame" x="15" y="11" width="114.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1611,14 +1661,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LogOutCell" id="WLC-F2-AuF" userLabel="LogoutCell">
-                                        <rect key="frame" x="0.0" y="228.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="229" width="375" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WLC-F2-AuF" id="9Pj-HV-ah8">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtY-7X-arc">
-                                                    <rect key="frame" x="15" y="11" width="53.5" height="21.5"/>
+                                                    <rect key="frame" x="15" y="11" width="53.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -2197,7 +2247,7 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ebP-M6-tQo"/>
-        <segue reference="gBW-GG-gBI"/>
-        <segue reference="qHD-oe-K0c"/>
+        <segue reference="gFo-kB-d6i"/>
+        <segue reference="N4T-kQ-zRx"/>
     </inferredMetricsTieBreakers>
 </document>
