@@ -17,6 +17,7 @@ class CreateTourViewController: UIViewController {
     @IBOutlet weak var tourNameTextField: UITextField!
     @IBOutlet weak var maximumParticipantsTextField: UITextField!
     @IBOutlet weak var minimumParticipantsTextField: UITextField!
+    @IBOutlet weak var tourPriceTextField: UITextField!
     @IBOutlet weak var tourDatePicker: UIDatePicker!
     @IBOutlet weak var tourDescriptionTextView: UITextView!
     @IBOutlet weak var chooseHikingRouteButton: UIButton!
@@ -33,8 +34,10 @@ class CreateTourViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        maximumParticipantsTextField.text = String(5)
+        minimumParticipantsTextField.text = String(1)
         tourDatePicker.minimumDate = Date()
-        
+        tourPriceTextField.text = String(0)
         let blackBorder = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
         tourDescriptionTextView.layer.borderColor = blackBorder.cgColor
         tourDescriptionTextView.layer.borderWidth = 0.5
@@ -46,12 +49,14 @@ class CreateTourViewController: UIViewController {
             let routeName = hikingTour.hikingroutename
             let minParticipants = hikingTour.minimumparticipant
             let maxParticipants = hikingTour.maximumparticipant
+            let price = hikingTour.price
             let tourDescritpion = hikingTour.tourdescription
             
             tourNameTextField.text = tourName
             chooseHikingRouteButton.setTitle(routeName, for: .normal)
             maximumParticipantsTextField.text = String(maxParticipants)
             minimumParticipantsTextField.text = String(minParticipants)
+            tourPriceTextField.text = String(price)
             tourDatePicker.date = dateAndTime
             tourDescriptionTextView.text = tourDescritpion
         }
@@ -84,6 +89,7 @@ class CreateTourViewController: UIViewController {
         
         guard let maximumParticipants = maximumParticipantsTextField.text else { return }
         guard let minimumParticipants = minimumParticipantsTextField.text else { return }
+        guard let price = tourPriceTextField.text else { return }
         let datePickerDate = DateFormatter.isoStringFormatter.string(from: tourDatePicker.date)
         guard let tourDescription = tourDescriptionTextView.text else { return }
         
@@ -92,7 +98,7 @@ class CreateTourViewController: UIViewController {
             let url = URL(string: "\(baseUrl)/hikingTour/createTour")!
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
-            let requestBody = "hostId=\(hostId)&tourName=\(tourName)&hikingRouteId=\(hikingRouteId!)&maximumParticipants=\(maximumParticipants)&minimumParticipants=\(minimumParticipants)&dateAndTime=\(datePickerDate)&tourDescription=\(tourDescription)".data(using: .utf8)
+            let requestBody = "hostId=\(hostId)&tourName=\(tourName)&hikingRouteId=\(hikingRouteId!)&maximumParticipants=\(maximumParticipants)&minimumParticipants=\(minimumParticipants)&price=\(price)&dateAndTime=\(datePickerDate)&tourDescription=\(tourDescription)".data(using: .utf8)
             request.httpBody = requestBody
             request.setValue(JWT_token!, forHTTPHeaderField: "Authorization")
             
@@ -124,7 +130,7 @@ class CreateTourViewController: UIViewController {
             let url = URL(string: "\(baseUrl)/hikingTour/editTour/\(existingHikingTour!.id)")!
             var request = URLRequest(url: url)
             request.httpMethod = "PUT"
-            let requestBody = "hostId=\(hostId)&tourName=\(tourName)&hikingRouteId=\(hikingRouteId!)&maximumParticipants=\(maximumParticipants)&minimumParticipants=\(minimumParticipants)&dateAndTime=\(datePickerDate)&tourDescription=\(tourDescription)".data(using: .utf8)
+            let requestBody = "hostId=\(hostId)&tourName=\(tourName)&hikingRouteId=\(hikingRouteId!)&maximumParticipants=\(maximumParticipants)&minimumParticipants=\(minimumParticipants)&price=\(price)&dateAndTime=\(datePickerDate)&tourDescription=\(tourDescription)".data(using: .utf8)
             request.httpBody = requestBody
             request.setValue(JWT_token!, forHTTPHeaderField: "Authorization")
             request.setValue("Application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")

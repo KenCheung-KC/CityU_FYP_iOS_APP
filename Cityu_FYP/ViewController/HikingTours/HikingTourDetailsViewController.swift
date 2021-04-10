@@ -17,6 +17,7 @@ class HikingTourDetailsViewController: UIViewController {
     @IBOutlet weak var hikingTourDateLabel: UILabel!
     @IBOutlet weak var hikingTourTimeLabel: UILabel!
     @IBOutlet weak var hikingTourHostNameLabel: UILabel!
+    @IBOutlet weak var hikingTourPriceLabel: UILabel!
     @IBOutlet weak var hikingTourMinimumParticipantLabel: UILabel!
     @IBOutlet weak var hikingTourMaximumParticipantLabel: UILabel!
     @IBOutlet weak var hikingRouteButton: UIButton!
@@ -38,6 +39,7 @@ class HikingTourDetailsViewController: UIViewController {
         hikingTourDateLabel.text = date
         hikingTourTimeLabel.text = time
         hikingTourHostNameLabel.text = hikingTourDetail?.hostname
+        hikingTourPriceLabel.text = "$\(hikingTourDetail!.price)"
         hikingTourMinimumParticipantLabel.text = String(hikingTourDetail!.minimumparticipant)
         hikingTourMaximumParticipantLabel.text = String(hikingTourDetail!.maximumparticipant)
         hikingTourDescriptionLabel.text = hikingTourDetail?.tourdescription
@@ -69,7 +71,7 @@ class HikingTourDetailsViewController: UIViewController {
         task.resume()
     }
     
-    @IBAction func joinButtonOnTap(_ sender: Any) {
+    func joinTour() {
         showSpinner(vc: self)
         
         guard let url = URL(string: "\(baseUrl)/hikingTour/joinHikingTour/\(hikingTourDetail!.id)") else { return }
@@ -98,6 +100,50 @@ class HikingTourDetailsViewController: UIViewController {
         }
         
         task.resume()
+    }
+    
+    @IBAction func joinButtonOnTap(_ sender: Any) {
+        if(self.hikingTourDetail!.price > 0) {
+            let controller = UIAlertController(title: "Message", message: "This tour charges $\(self.hikingTourDetail!.price), are you sure you need to join this tour?", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "Pay", style: .default, handler: {
+                (action) in
+                self.joinTour()
+            })
+            controller.addAction(okAction)
+            self.removeSpinner(vc: self)
+            self.present(controller, animated: true, completion: nil)
+        } else {
+            joinTour()
+        }
+        
+//            showSpinner(vc: self)
+//
+//            guard let url = URL(string: "\(baseUrl)/hikingTour/joinHikingTour/\(hikingTourDetail!.id)") else { return }
+//            var request = URLRequest(url: url)
+//            request.httpMethod = "POST"
+//            request.setValue(JWT_token!, forHTTPHeaderField: "Authorization")
+//            let requestBody = "userId=\(user!.id)".data(using: .utf8)
+//            request.httpBody = requestBody
+//
+//            let task = URLSession.shared.dataTask(with: request){
+//                (data, response, error) in
+//
+//                do {
+//                    let responseFromServer = try JSONDecoder().decode(JoinedToursResponse.self, from: data!)
+//                    let messageFromServer = responseFromServer.message
+//                    DispatchQueue.main.async {
+//                        let controller = UIAlertController(title: "Message From Server", message: messageFromServer, preferredStyle: .alert)
+//                        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+//                        controller.addAction(okAction)
+//                        self.removeSpinner(vc: self)
+//                        self.present(controller, animated: true, completion: nil)
+//                    }
+//                } catch let err {
+//                    print("err from hiking tour detail VC: \(err)")
+//                }
+//            }
+//
+//            task.resume()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
