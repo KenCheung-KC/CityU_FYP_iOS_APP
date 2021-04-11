@@ -37,6 +37,7 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
         definesPresentationContext = true
         searchController.searchBar.scopeButtonTitles = ["All", "Easy", "Moderate", "Difficult"]
     }
