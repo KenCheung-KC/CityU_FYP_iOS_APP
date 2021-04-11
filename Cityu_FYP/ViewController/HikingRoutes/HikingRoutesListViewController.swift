@@ -8,10 +8,14 @@
 
 import UIKit
 
-class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating {
     
     var hikingRoutes: [HikingRoute] = []
     var refreshControl: UIRefreshControl!
+    
+    open var searchController: UISearchController?
+    open var hidesSearchBarWhenScrolling: Bool?
+    var searchRoutes = [HikingRoute]()
     
     @IBOutlet weak var hikingRouteTableView: UITableView!
     
@@ -27,6 +31,52 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
         refreshControl = UIRefreshControl()
         hikingRouteTableView.addSubview(refreshControl)
         refreshControl.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControl.Event.valueChanged)
+        
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        searchController.searchBar.scopeButtonTitles = ["All", "Easy", "Moderate", "Difficult"]
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        let searchString = searchController.searchBar.text!
+        let scopeString = searchController.searchBar.scopeButtonTitles![searchController.searchBar.selectedScopeButtonIndex]
+        
+        if(searchString != "" && scopeString == "All") {
+            searchRoutes = hikingRoutes.filter { (route) -> Bool in
+                let lowercasedRouteName = route.name.lowercased()
+                return lowercasedRouteName.contains(searchString.lowercased())
+            }
+            hikingRouteTableView.reloadData()
+        }
+        
+        if(searchString == "" && scopeString != "All") {
+            searchRoutes = hikingRoutes.filter { (route) -> Bool in
+                let difficulty = route.difficulty
+                return difficulty == scopeString
+            }
+            hikingRouteTableView.reloadData()
+        }
+        
+        if(searchString == "" && scopeString == "All") {
+            searchRoutes = hikingRoutes.filter { (route) -> Bool in
+                return true
+            }
+            hikingRouteTableView.reloadData()
+        }
+        
+        if(searchString != "" && scopeString != "All") {
+            searchRoutes = hikingRoutes.filter { (route) -> Bool in
+                let lowercasedRouteName = route.name.lowercased()
+                let difficulty = route.difficulty
+                return lowercasedRouteName.contains(searchString.lowercased()) && difficulty == scopeString
+            }
+            hikingRouteTableView.reloadData()
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -34,10 +84,43 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if navigationItem.searchController?.isActive == true {
+            return searchRoutes.count
+        }
         return hikingRoutes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if navigationItem.searchController?.isActive == true {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "hikingRouteItemCell", for: indexPath) as! HikingRouteItemCell
+            
+            cell.hikingRouteNameLabel.text = searchRoutes[indexPath.row].name
+            cell.hikingRouteDescription.text = searchRoutes[indexPath.row].description
+            
+            let rating = searchRoutes[indexPath.row].stars
+            for n in 0...4 {
+                let starsContainer = cell.ratingStarContainerView
+                let starImageView = starsContainer?.subviews[n] as! UIImageView
+                if (n < rating) {
+                    starImageView.image = UIImage(named: "weakness_fill")
+                } else {
+                    starImageView.image = UIImage(named: "weakness_empty")
+                }
+            }
+            
+            let imageUrl = searchRoutes[indexPath.row].hikingrouteimage
+            let url = URL(string: imageUrl!)
+            URLSession.shared.dataTask(with: url!){
+                (data, response, err) in
+                guard let data = data else { return }
+                DispatchQueue.main.async {
+                    cell.hikingRouteImage.image = UIImage(data: data)
+                }
+            }.resume()
+            
+            return cell
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "hikingRouteItemCell", for: indexPath) as! HikingRouteItemCell
         
         cell.hikingRouteNameLabel.text = hikingRoutes[indexPath.row].name
@@ -72,10 +155,19 @@ class HikingRoutesListViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "GoToHikingRouteDetailPage" {
-            if let indexPath = self.hikingRouteTableView.indexPathForSelectedRow {
-                let destinationVC = segue.destination as! HikingRouteDetailViewController
-                destinationVC.hikingRouteDetail = hikingRoutes[indexPath.row]
+        if (navigationItem.searchController?.isActive == true) {
+            if segue.identifier == "GoToHikingRouteDetailPage" {
+                if let indexPath = self.hikingRouteTableView.indexPathForSelectedRow {
+                    let destinationVC = segue.destination as! HikingRouteDetailViewController
+                    destinationVC.hikingRouteDetail = searchRoutes[indexPath.row]
+                }
+            }
+        } else {
+            if segue.identifier == "GoToHikingRouteDetailPage" {
+                if let indexPath = self.hikingRouteTableView.indexPathForSelectedRow {
+                    let destinationVC = segue.destination as! HikingRouteDetailViewController
+                    destinationVC.hikingRouteDetail = hikingRoutes[indexPath.row]
+                }
             }
         }
     }

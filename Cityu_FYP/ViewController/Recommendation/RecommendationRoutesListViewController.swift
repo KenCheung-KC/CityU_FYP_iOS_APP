@@ -39,7 +39,7 @@ class RecommendationRoutesListViewController: UIViewController, UITableViewDataS
         let recommendedByContentBased = recommendedRoutes[indexPath.row].recommendedbycontentbased
         let recommendedByCollaborativeFiltering = recommendedRoutes[indexPath.row].recommendedbycollaborativefiltering
         let recommendedForColdStart = recommendedRoutes[indexPath.row].recommendedforcoldstart
-        print("recommendedforcoldstar: \(recommendedForColdStart)")
+        
         // some default configuration of UI components
         cell.recommendedByCBLabel.isHidden = true
         cell.recommendedByCFLabel.isHidden = true
