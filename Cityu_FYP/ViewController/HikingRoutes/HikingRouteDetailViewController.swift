@@ -32,7 +32,7 @@ class HikingRouteDetailViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.navigationBar.prefersLargeTitles = false
         // Do any additional setup after loading the view.
         mapHikingRouteDetailToUI()
         mapview.delegate = self
