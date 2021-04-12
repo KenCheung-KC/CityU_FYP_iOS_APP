@@ -38,7 +38,7 @@ class RegisterViewController: UIViewController {
             print("response from server: ", String(data: data, encoding: .utf8)!)
             self.removeSpinner(vc: self)
             let messageFromServer = String(data: data, encoding: .utf8)
-            if(messageFromServer != "User created!") {
+            if(messageFromServer != "Account created!") {
                 DispatchQueue.main.async {
                     let controller = UIAlertController(title: "Warning", message: messageFromServer, preferredStyle: .alert)
                     let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
