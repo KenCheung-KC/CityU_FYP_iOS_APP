@@ -110,6 +110,8 @@ class HikingTourDetailsViewController: UIViewController {
                 self.joinTour()
             })
             controller.addAction(okAction)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            controller.addAction(cancelAction)
             self.removeSpinner(vc: self)
             self.present(controller, animated: true, completion: nil)
         } else {
