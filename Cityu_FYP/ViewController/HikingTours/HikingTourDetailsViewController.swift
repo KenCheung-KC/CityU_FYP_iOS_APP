@@ -26,6 +26,7 @@ class HikingTourDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = false
         if(hikingTourDetail?.hostid != user?.id) {
             self.navigationItem.rightBarButtonItem = nil
         } else {
