@@ -70,3 +70,7 @@ struct RecommendedRoutesResponse: Codable {
     var message: String
     var recommendedRoutes: [HikingRoute]
 }
+
+struct TourParticipantsResponse: Codable {
+    var participants: [TourParticipant]
+}
