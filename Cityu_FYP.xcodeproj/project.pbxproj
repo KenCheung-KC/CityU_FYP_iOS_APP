@@ -31,6 +31,11 @@
 		3A8C1F4125C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C1F4025C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg */; };
 		3A92E82E2617781500F99A33 /* RecommendationRoutesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E82D2617781500F99A33 /* RecommendationRoutesListViewController.swift */; };
 		3A92E83026177CCF00F99A33 /* RecommendationRouteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E82F26177CCF00F99A33 /* RecommendationRouteItemCell.swift */; };
+		3A92E832262AE27C00F99A33 /* TourParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E831262AE27C00F99A33 /* TourParticipantsViewController.swift */; };
+		3A92E834262D28C300F99A33 /* TourParticipantsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E833262D28C200F99A33 /* TourParticipantsTableViewCell.swift */; };
+		3A92E836262D2E8900F99A33 /* TourParticipant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E835262D2E8900F99A33 /* TourParticipant.swift */; };
+		3A92E838262D342B00F99A33 /* MoreOptionsForHosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E837262D342B00F99A33 /* MoreOptionsForHosterViewController.swift */; };
+		3A92E83A262D34C800F99A33 /* OptionCellForTourHosterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A92E839262D34C800F99A33 /* OptionCellForTourHosterTableViewCell.swift */; };
 		3AADB6B825BB437E0044850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6B725BB437E0044850C /* AppDelegate.swift */; };
 		3AADB6BA25BB437E0044850C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6B925BB437E0044850C /* SceneDelegate.swift */; };
 		3AADB6BC25BB437E0044850C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AADB6BB25BB437E0044850C /* ViewController.swift */; };
@@ -78,6 +83,11 @@
 		3A8C1F4025C5A15800DFCE97 /* Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg"; sourceTree = "<group>"; };
 		3A92E82D2617781500F99A33 /* RecommendationRoutesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationRoutesListViewController.swift; sourceTree = "<group>"; };
 		3A92E82F26177CCF00F99A33 /* RecommendationRouteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationRouteItemCell.swift; sourceTree = "<group>"; };
+		3A92E831262AE27C00F99A33 /* TourParticipantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourParticipantsViewController.swift; sourceTree = "<group>"; };
+		3A92E833262D28C200F99A33 /* TourParticipantsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourParticipantsTableViewCell.swift; sourceTree = "<group>"; };
+		3A92E835262D2E8900F99A33 /* TourParticipant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourParticipant.swift; sourceTree = "<group>"; };
+		3A92E837262D342B00F99A33 /* MoreOptionsForHosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOptionsForHosterViewController.swift; sourceTree = "<group>"; };
+		3A92E839262D34C800F99A33 /* OptionCellForTourHosterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCellForTourHosterTableViewCell.swift; sourceTree = "<group>"; };
 		3AADB6B425BB437E0044850C /* Cityu_FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cityu_FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AADB6B725BB437E0044850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AADB6B925BB437E0044850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +167,8 @@
 				3AE9F1AE25DD1A7500E7670E /* HikingTourListViewController.swift */,
 				3A8BB55925E5425D0053A8F5 /* HikingTourDetailsViewController.swift */,
 				3A630B0825F38652001B6A64 /* SelectRouteForTourViewController.swift */,
+				3A92E831262AE27C00F99A33 /* TourParticipantsViewController.swift */,
+				3A92E837262D342B00F99A33 /* MoreOptionsForHosterViewController.swift */,
 			);
 			path = HikingTours;
 			sourceTree = "<group>";
@@ -255,6 +267,7 @@
 				3AF17C6E25D64BAB0027A70D /* User.swift */,
 				3AF17C6925D5B7A20027A70D /* ServerResponseDefinition.swift */,
 				3A1FB09625ED5B2600929CB4 /* DateAndTime.swift */,
+				3A92E835262D2E8900F99A33 /* TourParticipant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -270,6 +283,8 @@
 				3A630B0A25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift */,
 				3A8742C4260E4AB500122212 /* LikedRouteTableViewCell.swift */,
 				3A92E82F26177CCF00F99A33 /* RecommendationRouteItemCell.swift */,
+				3A92E833262D28C200F99A33 /* TourParticipantsTableViewCell.swift */,
+				3A92E839262D34C800F99A33 /* OptionCellForTourHosterTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -405,6 +420,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A92E83026177CCF00F99A33 /* RecommendationRouteItemCell.swift in Sources */,
+				3A92E83A262D34C800F99A33 /* OptionCellForTourHosterTableViewCell.swift in Sources */,
+				3A92E834262D28C300F99A33 /* TourParticipantsTableViewCell.swift in Sources */,
 				3A8742C5260E4AB500122212 /* LikedRouteTableViewCell.swift in Sources */,
 				3A1FB09725ED5B2600929CB4 /* DateAndTime.swift in Sources */,
 				3A8C1F3C25C56D2F00DFCE97 /* LoginPageViewController.swift in Sources */,
@@ -421,16 +438,19 @@
 				3A2A68EB25D2843A001FC74F /* util.swift in Sources */,
 				3AE9F1B125DD1BAE00E7670E /* HikingTourItemCell.swift in Sources */,
 				3AADB6C225BB437E0044850C /* Cityu_FYP.xcdatamodeld in Sources */,
+				3A92E838262D342B00F99A33 /* MoreOptionsForHosterViewController.swift in Sources */,
 				3AF17C6D25D5B7F30027A70D /* HikingRoute.swift in Sources */,
 				3A388CE125EFBB42009069BC /* MyInformationTableViewCell.swift in Sources */,
 				3A630B0925F38652001B6A64 /* SelectRouteForTourViewController.swift in Sources */,
 				3A1FB09F25ED6CFB00929CB4 /* JoinedTourDetailCell.swift in Sources */,
 				3AF17C7225D64C890027A70D /* HikingRouteItemCell.swift in Sources */,
+				3A92E832262AE27C00F99A33 /* TourParticipantsViewController.swift in Sources */,
 				3A630B0B25F386A5001B6A64 /* SelectRouteForTourTableViewCell.swift in Sources */,
 				3A8BB55A25E5425D0053A8F5 /* HikingTourDetailsViewController.swift in Sources */,
 				3AF17C6825D3B7DD0027A70D /* HikingRoutesListViewController.swift in Sources */,
 				3AD9A4A525EE6F1300ECD9DE /* HostedTourDetailCell.swift in Sources */,
 				3A92E82E2617781500F99A33 /* RecommendationRoutesListViewController.swift in Sources */,
+				3A92E836262D2E8900F99A33 /* TourParticipant.swift in Sources */,
 				3AE9F1AF25DD1A7500E7670E /* HikingTourListViewController.swift in Sources */,
 				3AADB6BA25BB437E0044850C /* SceneDelegate.swift in Sources */,
 				3AD9A4A325EE6EBE00ECD9DE /* HostedToursListViewController.swift in Sources */,

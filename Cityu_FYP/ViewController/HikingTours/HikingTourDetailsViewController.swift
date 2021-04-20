@@ -27,8 +27,11 @@ class HikingTourDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = false
+        let viewParticipantsBarButtonItem = UIBarButtonItem(title: "Participants", style: .plain, target: self, action: #selector(viewParticipants))
+        
         if(hikingTourDetail?.hostid != user?.id) {
-            self.navigationItem.rightBarButtonItem = nil
+//            self.navigationItem.rightBarButtonItem = nil
+            self.navigationItem.rightBarButtonItem = viewParticipantsBarButtonItem
         } else {
             self.navigationItem.rightBarButtonItem = navigationBarEditButton
         }
@@ -160,10 +163,28 @@ class HikingTourDetailsViewController: UIViewController {
             destinationVC.editingTour = true
             destinationVC.existingHikingTour = hikingTourDetail
         }
+        
+        if segue.identifier == "ShowHikingTourParticipant" {
+            let destinationVC = segue.destination as! TourParticipantsViewController
+            destinationVC.hikingTour = hikingTourDetail
+        }
+        
+        if segue.identifier == "GoToMoreOptionsForHoster" {
+            let destinationVC = segue.destination as! MoreOptionsForHosterViewController
+            destinationVC.hikingTour = hikingTourDetail
+            destinationVC.editingTour = true
+        }
     }
     
     @IBAction func navigationBarEditButtonOnTap(_ sender: Any) {
-        performSegue(withIdentifier: "GoToCreateTourVCToEditTour", sender: self)
+//        performSegue(withIdentifier: "GoToCreateTourVCToEditTour", sender: self)
+        performSegue(withIdentifier: "GoToMoreOptionsForHoster", sender: self)
+    }
+    
+    @objc func viewParticipants (){
+//        let tourParticipantViewController = self.storyboard?.instantiateViewController(identifier: "TourParticipantsList") as! TourParticipantsViewController
+//        self.present(tourParticipantViewController, animated: true)
+        performSegue(withIdentifier: "ShowHikingTourParticipant", sender: self)
     }
     
 }
