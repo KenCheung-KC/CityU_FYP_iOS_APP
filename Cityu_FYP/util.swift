@@ -10,7 +10,9 @@ import UIKit
 
 //var aView : UIView?
 var JWT_token: String?
+//var baseUrl: String = "https://powerful-bastion-22979.herokuapp.com" // for heroku server
 var baseUrl: String = "http://localhost:3000"
+//var baseUrl: String = "http://192.168.0.103:3000" // for iOS device
 var user: User?
 
 extension UIViewController {

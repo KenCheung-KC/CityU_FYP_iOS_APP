@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2E9-RK-J0S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2E9-RK-J0S">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="575" width="375" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcR-Ji-F7B">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcR-Ji-F7B">
                                 <rect key="frame" x="55" y="599" width="81" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -35,7 +37,7 @@
                                     <segue destination="MMd-Nr-Vd7" kind="show" identifier="" id="mBC-dR-FTw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFP-cg-LHu">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFP-cg-LHu">
                                 <rect key="frame" x="234" y="599" width="71" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -74,8 +76,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="M1u-VB-sYE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="9MG-bs-eCl"/>
                     <connections>
@@ -134,7 +136,7 @@
                                 <rect key="frame" x="0.0" y="581" width="375" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypf-Ht-rcg">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypf-Ht-rcg">
                                 <rect key="frame" x="58" y="606" width="52" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -146,7 +148,7 @@
                                     <segue destination="r5o-dw-BAQ" kind="unwind" identifier="GoBackToLoginPage" unwindAction="unwindFunctionWithUnwindSegue:" id="HSi-mG-nnX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maV-rh-qL9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maV-rh-qL9">
                                 <rect key="frame" x="240" y="603" width="81" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
@@ -163,8 +165,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cSR-Hv-xh1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="DOt-xz-jLU"/>
                     <connections>
@@ -193,7 +195,7 @@
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="hikingRouteItemCell" rowHeight="340" id="6jG-2l-h8H" customClass="HikingRouteItemCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="340"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="340"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6jG-2l-h8H" id="06Q-tB-izy">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="340"/>
@@ -249,7 +251,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -265,8 +267,8 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QVM-5q-9lh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hiking Routes" id="UCb-vF-UtM"/>
                     <connections>
@@ -296,13 +298,13 @@
                                                 <rect key="frame" x="15" y="10" width="345" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be3-5E-FfS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R4i-dE-v2Z">
-                                                        <rect key="frame" x="125.5" y="0.0" width="219.5" height="40"/>
+                                                        <rect key="frame" x="125" y="0.0" width="220" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -323,7 +325,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-bQ-wEq">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-bQ-wEq">
                                                         <rect key="frame" x="134" y="0.0" width="211" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -406,7 +408,7 @@
                                                 <rect key="frame" x="15" y="254" width="345" height="244.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EN-QE-Z8h">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -424,7 +426,7 @@
                                                 <rect key="frame" x="15" y="508.5" width="345" height="148.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9Z-c8-mza">
-                                                        <rect key="frame" x="0.0" y="0.0" width="129" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -435,7 +437,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="Mlf-WW-8LJ"/>
                                                         </constraints>
-                                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -446,7 +448,7 @@
                                                     <constraint firstItem="R8X-Xb-b3B" firstAttribute="leading" secondItem="A70-a5-ogJ" secondAttribute="leading" id="gQa-Ft-ibW"/>
                                                 </constraints>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFV-jE-oAo">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFV-jE-oAo">
                                                 <rect key="frame" x="15" y="677" width="345" height="40"/>
                                                 <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -461,7 +463,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="hYG-DA-Sld" firstAttribute="leading" secondItem="MnA-Ie-f4t" secondAttribute="leading" constant="15" id="15B-Q3-7F0"/>
                                             <constraint firstItem="Zbh-Kv-lZa" firstAttribute="top" secondItem="10y-2K-zXg" secondAttribute="bottom" constant="10" id="3zi-Ks-Hxy"/>
@@ -502,7 +504,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0IJ-e1-9RL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MnA-Ie-f4t" firstAttribute="width" secondItem="eVP-7q-ikp" secondAttribute="width" id="3pU-yK-Krn"/>
                             <constraint firstItem="R8W-P4-ml9" firstAttribute="leading" secondItem="0IJ-e1-9RL" secondAttribute="leading" id="5aU-6f-lYz"/>
@@ -510,7 +513,6 @@
                             <constraint firstItem="R8W-P4-ml9" firstAttribute="top" secondItem="0IJ-e1-9RL" secondAttribute="top" id="UZT-dN-5Ki"/>
                             <constraint firstItem="R8W-P4-ml9" firstAttribute="centerX" secondItem="eVP-7q-ikp" secondAttribute="centerX" id="ufJ-n8-i46"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0IJ-e1-9RL"/>
                     </view>
                     <navigationItem key="navigationItem" id="eod-18-VRP"/>
                     <connections>
@@ -538,8 +540,8 @@
                     <view key="view" contentMode="scaleToFill" id="slb-Yz-SkG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DUH-ND-T3X"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltN-iH-OuA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -557,10 +559,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aHx-cf-vhn">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectRouteForTourCell" rowHeight="120" id="HJL-1m-xvy" customClass="SelectRouteForTourTableViewCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HJL-1m-xvy" id="WEX-Pr-BHC">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
@@ -598,7 +600,7 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Difficulty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYQ-yi-7b4">
                                                     <rect key="frame" x="15" y="64" width="73" height="21"/>
@@ -617,8 +619,8 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="YLS-d3-xmf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Osi-2E-T0T"/>
                     <connections>
@@ -647,14 +649,14 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ll0-nv-Kgu">
                                                 <rect key="frame" x="20" y="20" width="335" height="150"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="jx2-9e-iui"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TP4-Tq-ofm">
                                                 <rect key="frame" x="20" y="230.5" width="335" height="150"/>
-                                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="VV8-rZ-FlU"/>
                                                 </constraints>
@@ -673,14 +675,14 @@
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmC-sx-g55">
                                                 <rect key="frame" x="20" y="441" width="335" height="150"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="335" id="Kgk-OT-0kz"/>
                                                     <constraint firstAttribute="height" constant="150" id="o6n-to-QLZ"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="DCC-F8-QVB" secondAttribute="trailing" constant="20" id="8n6-bF-h4N"/>
                                             <constraint firstAttribute="trailing" secondItem="TP4-Tq-ofm" secondAttribute="trailing" constant="20" id="A4h-gr-FKy"/>
@@ -709,7 +711,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="j7b-QA-5fV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uBE-39-b81" firstAttribute="leading" secondItem="j7b-QA-5fV" secondAttribute="leading" id="5Xj-Uz-7ia"/>
                             <constraint firstItem="uBE-39-b81" firstAttribute="bottom" secondItem="j7b-QA-5fV" secondAttribute="bottom" id="8Ci-aU-wFQ"/>
@@ -718,7 +721,6 @@
                             <constraint firstItem="uBE-39-b81" firstAttribute="trailing" secondItem="j7b-QA-5fV" secondAttribute="trailing" id="hqa-bK-Q0L"/>
                             <constraint firstItem="KtN-AC-rQA" firstAttribute="height" secondItem="gjk-ta-7kK" secondAttribute="height" priority="250" id="t1q-co-ZUi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="j7b-QA-5fV"/>
                     </view>
                     <connections>
                         <outlet property="textLabel1" destination="DCC-F8-QVB" id="I7s-ir-Zzu"/>
@@ -782,7 +784,7 @@
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             </imageView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -913,7 +915,7 @@
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0p-fA-gsp" customClass="CosmosView" customModule="Cosmos">
                                                         <rect key="frame" x="61.5" y="0.0" width="283.5" height="30"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="starSize">
                                                                 <real key="value" value="30"/>
@@ -966,14 +968,14 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="myM-eC-V2m"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4DV-MA-AAY" firstAttribute="trailing" secondItem="myM-eC-V2m" secondAttribute="trailing" id="UtK-0Z-swf"/>
                             <constraint firstItem="4DV-MA-AAY" firstAttribute="top" secondItem="myM-eC-V2m" secondAttribute="top" id="ZUV-Ep-3kx"/>
                             <constraint firstItem="4DV-MA-AAY" firstAttribute="bottom" secondItem="myM-eC-V2m" secondAttribute="bottom" id="dZK-79-vuk"/>
                             <constraint firstItem="4DV-MA-AAY" firstAttribute="leading" secondItem="myM-eC-V2m" secondAttribute="leading" id="nx7-Zb-0xt"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="myM-eC-V2m"/>
                     </view>
                     <navigationItem key="navigationItem" id="BUY-zA-vzm">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="heart" catalog="system" id="RTD-FQ-KE7">
@@ -1010,17 +1012,17 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x8f-Ua-rmw">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OptionCellForTourHoster" textLabel="73e-zV-eNB" style="IBUITableViewCellStyleDefault" id="gOS-BR-L5D" customClass="OptionCellForTourHosterTableViewCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gOS-BR-L5D" id="bcH-2n-HYm">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="73e-zV-eNB">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1035,14 +1037,14 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="yEL-oO-xEJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="x8f-Ua-rmw" firstAttribute="bottom" secondItem="yEL-oO-xEJ" secondAttribute="bottom" id="H6h-uh-tWD"/>
                             <constraint firstItem="x8f-Ua-rmw" firstAttribute="top" secondItem="yEL-oO-xEJ" secondAttribute="top" id="ehs-Ma-8IP"/>
                             <constraint firstItem="x8f-Ua-rmw" firstAttribute="trailing" secondItem="yEL-oO-xEJ" secondAttribute="trailing" id="i8j-Rr-yku"/>
                             <constraint firstItem="x8f-Ua-rmw" firstAttribute="leading" secondItem="yEL-oO-xEJ" secondAttribute="leading" id="zlh-6N-MFA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="yEL-oO-xEJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="More" id="h2w-C7-fzb"/>
                     <connections>
@@ -1065,17 +1067,17 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y56-T3-N8N">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TourParticipantCell" textLabel="6Cv-ny-HXI" style="IBUITableViewCellStyleDefault" id="HLW-nD-fcu" customClass="TourParticipantsTableViewCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HLW-nD-fcu" id="3GX-pa-ODP">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Cv-ny-HXI">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1090,14 +1092,14 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Adk-jz-4ST"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Y56-T3-N8N" firstAttribute="leading" secondItem="Adk-jz-4ST" secondAttribute="leading" id="218-8G-VO4"/>
                             <constraint firstItem="Y56-T3-N8N" firstAttribute="bottom" secondItem="Adk-jz-4ST" secondAttribute="bottom" id="798-OL-7OW"/>
                             <constraint firstItem="Y56-T3-N8N" firstAttribute="trailing" secondItem="Adk-jz-4ST" secondAttribute="trailing" id="T5c-sH-klU"/>
                             <constraint firstItem="Y56-T3-N8N" firstAttribute="top" secondItem="Adk-jz-4ST" secondAttribute="top" id="nr2-rA-u34"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Adk-jz-4ST"/>
                     </view>
                     <navigationItem key="navigationItem" title="Participants" id="sVt-HN-6dJ"/>
                     <connections>
@@ -1120,7 +1122,7 @@
                                 <rect key="frame" x="0.0" y="58" width="414" height="263"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-qi-GAa">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-qi-GAa">
                                 <rect key="frame" x="164" y="409" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -1130,8 +1132,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="oKQ-XT-f49"/>
                     <connections>
@@ -1150,14 +1152,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZG-sA-5vF">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZG-sA-5vF">
                                 <rect key="frame" x="164" y="390" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HyC-Sq-wv9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="bO1-hb-a5G"/>
                 </viewController>
@@ -1172,7 +1174,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EUz-xa-bBD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3uh-l3-Nmv"/>
@@ -1214,11 +1216,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iO8-Xp-95b">
                                 <rect key="frame" x="1" y="44" width="374" height="574"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="hikingTourItemCell" rowHeight="300" id="Lxw-LN-yE9" customClass="HikingTourItemCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="300"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="374" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lxw-LN-yE9" id="Qxt-iH-8Gk">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="300"/>
@@ -1257,7 +1259,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eN-jJ-syf">
                                                     <rect key="frame" x="16" y="234" width="339" height="40"/>
@@ -1283,8 +1285,8 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="kwH-kb-nEw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hiking Tours" id="0i1-G6-SK4">
                         <barButtonItem key="rightBarButtonItem" title="Create tour" id="akH-LP-F8Q">
@@ -1337,13 +1339,13 @@
                                                 <rect key="frame" x="15" y="114.5" width="345" height="24"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Hosted by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riF-sI-ljZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="102.5" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="102" height="24"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alice Wong" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlX-lr-lvT">
-                                                        <rect key="frame" x="139.5" y="0.0" width="205.5" height="24"/>
+                                                        <rect key="frame" x="139" y="0.0" width="206" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1371,13 +1373,13 @@
                                                 <rect key="frame" x="15" y="182.5" width="345" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Min. Participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDK-OG-WrR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyE-VF-F6u">
-                                                        <rect key="frame" x="177.5" y="0.0" width="167.5" height="20.5"/>
+                                                        <rect key="frame" x="177" y="0.0" width="168" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1388,13 +1390,13 @@
                                                 <rect key="frame" x="15" y="213" width="345" height="20.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Max. Participants:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oxd-2W-hye">
-                                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSB-81-dTb">
-                                                        <rect key="frame" x="177.5" y="0.0" width="167.5" height="20.5"/>
+                                                        <rect key="frame" x="177" y="0.0" width="168" height="20.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1405,16 +1407,16 @@
                                                 <rect key="frame" x="15" y="243.5" width="345" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hiking route:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-fU-SaH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-BE-qcX">
-                                                        <rect key="frame" x="147.5" y="0.0" width="197.5" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRH-BE-qcX">
+                                                        <rect key="frame" x="147" y="0.0" width="198" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="Aberdeen reservoir">
-                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <color key="titleColor" systemColor="darkTextColor"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="hikingRouteButtonOnTap:" destination="7rj-Yj-GnL" eventType="touchUpInside" id="tKV-ea-cfv"/>
@@ -1425,7 +1427,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QCS-0t-h0g" userLabel="join button Stack View">
                                                 <rect key="frame" x="15" y="283.5" width="345" height="48"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAJ-MI-aEa">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAJ-MI-aEa">
                                                         <rect key="frame" x="0.0" y="0.0" width="345" height="48"/>
                                                         <color key="backgroundColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
@@ -1474,7 +1476,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zc3-5F-GhK" secondAttribute="bottom" constant="20" id="1vw-6N-aV1"/>
                                             <constraint firstItem="gTo-gP-bLl" firstAttribute="leading" secondItem="KWN-9f-ZYn" secondAttribute="leading" constant="15" id="4t5-eP-qfb"/>
@@ -1522,7 +1524,8 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0eY-yy-CiJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6kw-00-oNX" firstAttribute="top" secondItem="0eY-yy-CiJ" secondAttribute="top" id="2Fk-Gp-OIu"/>
                             <constraint firstItem="KWN-9f-ZYn" firstAttribute="leading" secondItem="0eY-yy-CiJ" secondAttribute="leading" id="3Cn-9U-SYH"/>
@@ -1532,7 +1535,6 @@
                             <constraint firstItem="6kw-00-oNX" firstAttribute="bottom" secondItem="0eY-yy-CiJ" secondAttribute="bottom" id="wmY-oQ-DOM"/>
                             <constraint firstItem="6kw-00-oNX" firstAttribute="leading" secondItem="0eY-yy-CiJ" secondAttribute="leading" id="wzK-bW-AmH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0eY-yy-CiJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="FrO-Ad-I2H">
                         <barButtonItem key="rightBarButtonItem" title="More" id="qA6-2x-uLU">
@@ -1589,27 +1591,27 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lc7-Ec-d1f">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RecommendationListItemCell" rowHeight="180" id="A5O-Ne-Mwx" customClass="RecommendationRouteItemCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="180"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A5O-Ne-Mwx" id="7lq-H4-YcX">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aberdeen-Reservoir-IMAGE-1-nick-KITO" translatesAutoresizingMaskIntoConstraints="NO" id="HJv-H8-aOg">
-                                                    <rect key="frame" x="20" y="11" width="140" height="118"/>
+                                                    <rect key="frame" x="21" y="11" width="140" height="118"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="0WR-1T-c15"/>
                                                         <constraint firstAttribute="width" constant="140" id="V6Y-d3-NWE"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ni4-zn-ll4">
-                                                    <rect key="frame" x="165" y="11" width="195" height="118"/>
+                                                    <rect key="frame" x="166" y="11" width="193" height="118"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aberdeen Reservoir" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyS-h4-OwH">
-                                                            <rect key="frame" x="0.0" y="0.0" width="195" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="193" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="dbv-Vr-E8R"/>
                                                             </constraints>
@@ -1618,7 +1620,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5r-DS-RV7">
-                                                            <rect key="frame" x="0.0" y="28" width="195" height="90"/>
+                                                            <rect key="frame" x="0.0" y="28" width="193" height="90"/>
                                                             <string key="text">Aberdeen Reservoirs, located in Aberdeen Country Park, are a set of two reservoirs, Upper and Lower Aberdeen Reservoirs. They are built in 1931 and 1890 respectively. The dams of both reservoirs, as well as the bridge and valve house of Upper Aberdeen Reservoir, are declared as monuments.
 
 Barbecue sites are established near the reservoirs, along with the Aberdeen Nature Trail and Aberdeen Tree Walk. There is Rhodoleia championii (commonly known as 'Rhodoleia' or 'Hong Kong Rose'), a rare tree.
@@ -1639,27 +1641,27 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                                     </constraints>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IlL-Qr-HLy" userLabel="Notation View">
-                                                    <rect key="frame" x="20" y="134" width="335" height="35"/>
+                                                    <rect key="frame" x="21" y="134" width="333" height="35"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vO0-JD-EFW">
                                                             <rect key="frame" x="0.0" y="0.0" width="28" height="35"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                            <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" systemColor="systemRedColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUU-Vx-NBO">
                                                             <rect key="frame" x="38" y="0.0" width="26" height="35"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                            <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" systemColor="systemBlueColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXA-ds-7fQ">
                                                             <rect key="frame" x="71" y="0.0" width="28" height="35"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" systemColor="systemGreenColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -1692,14 +1694,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ljI-Ae-ZDv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lc7-Ec-d1f" firstAttribute="top" secondItem="ljI-Ae-ZDv" secondAttribute="top" id="ERR-Nh-mjo"/>
                             <constraint firstItem="lc7-Ec-d1f" firstAttribute="trailing" secondItem="ljI-Ae-ZDv" secondAttribute="trailing" id="W6g-sD-2Kq"/>
                             <constraint firstItem="lc7-Ec-d1f" firstAttribute="leading" secondItem="ljI-Ae-ZDv" secondAttribute="leading" id="fCm-Py-Vu5"/>
                             <constraint firstItem="lc7-Ec-d1f" firstAttribute="bottom" secondItem="ljI-Ae-ZDv" secondAttribute="bottom" id="jgI-ON-QvO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ljI-Ae-ZDv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recommendation" image="recommendation" id="jji-jq-xfy"/>
                     <navigationItem key="navigationItem" title="Recommendation" id="NgU-yB-0hZ"/>
@@ -1722,17 +1724,17 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="iRv-Jr-txN">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JoinedToursCell" id="5pj-yv-SYS">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="375" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5pj-yv-SYS" id="cXC-A0-rEz">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349.5" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joined tours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8X-MG-qp3">
-                                                    <rect key="frame" x="15" y="11" width="95" height="21.5"/>
+                                                    <rect key="frame" x="16" y="11" width="95" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1746,14 +1748,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HostedToursCell" id="EI4-Ct-UqM">
-                                        <rect key="frame" x="0.0" y="99" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="92.5" width="375" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EI4-Ct-UqM" id="y9F-pE-wNj">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349.5" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hosted tours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqW-BP-1nf">
-                                                    <rect key="frame" x="15" y="11" width="99.5" height="21.5"/>
+                                                    <rect key="frame" x="16" y="11" width="99" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1767,10 +1769,10 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LikedRoutesCell" id="fhM-Xc-iTB" userLabel="LikedRoutesCell">
-                                        <rect key="frame" x="0.0" y="142.5" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fhM-Xc-iTB" id="rQR-wN-iAk">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Liked routes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zE-9v-hSh">
@@ -1784,14 +1786,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyInformationCell" id="HPq-Vv-lsO" userLabel="MyInformationCell">
-                                        <rect key="frame" x="0.0" y="186" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="179" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HPq-Vv-lsO" id="St7-c6-z9U">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU1-X8-rsz">
-                                                    <rect key="frame" x="15" y="11" width="114.5" height="21"/>
+                                                    <rect key="frame" x="16" y="11" width="114" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1805,16 +1807,16 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="LogOutCell" id="WLC-F2-AuF" userLabel="LogoutCell">
-                                        <rect key="frame" x="0.0" y="229" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="222.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WLC-F2-AuF" id="9Pj-HV-ah8">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtY-7X-arc">
-                                                    <rect key="frame" x="15" y="11" width="53.5" height="21"/>
+                                                    <rect key="frame" x="16" y="11" width="53.5" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" systemColor="systemRedColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1829,14 +1831,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                 <sections/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eMz-vi-kF9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iRv-Jr-txN" firstAttribute="top" secondItem="eMz-vi-kF9" secondAttribute="top" id="DUO-xd-Uri"/>
                             <constraint firstItem="iRv-Jr-txN" firstAttribute="bottom" secondItem="eMz-vi-kF9" secondAttribute="bottom" id="NFk-bn-qo0"/>
                             <constraint firstItem="iRv-Jr-txN" firstAttribute="trailing" secondItem="eMz-vi-kF9" secondAttribute="trailing" id="ceW-fr-vXI"/>
                             <constraint firstItem="iRv-Jr-txN" firstAttribute="leading" secondItem="eMz-vi-kF9" secondAttribute="leading" id="pE1-8b-vPG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="eMz-vi-kF9"/>
                     </view>
                     <navigationItem key="navigationItem" title="More" id="V9e-CP-DPP"/>
                     <connections>
@@ -1878,26 +1880,26 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b3k-K7-LkM">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JoinedTourDetailCell" rowHeight="100" id="LV3-li-bdU" customClass="JoinedTourDetailCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LV3-li-bdU" id="D5n-4N-LHy">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jHY-NY-C1a">
-                                                    <rect key="frame" x="15" y="11" width="345" height="20.5"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGB-7x-AU1">
-                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="43" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBD-LF-sf3">
-                                                            <rect key="frame" x="65" y="0.0" width="280" height="20.5"/>
+                                                            <rect key="frame" x="63" y="0.0" width="280" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="280" id="bAU-Rf-M3d"/>
                                                             </constraints>
@@ -1908,16 +1910,16 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="K4w-0Y-e5k">
-                                                    <rect key="frame" x="15" y="52" width="345" height="20.5"/>
+                                                    <rect key="frame" x="16" y="52" width="343" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NO-OG-bLr">
-                                                            <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ed0-9g-ccw">
-                                                            <rect key="frame" x="65" y="0.0" width="280" height="20.5"/>
+                                                            <rect key="frame" x="63" y="0.0" width="280" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="280" id="C6j-HE-kFC"/>
                                                             </constraints>
@@ -1928,16 +1930,16 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3Vc-dp-zBF">
-                                                    <rect key="frame" x="15" y="72.5" width="345" height="20.5"/>
+                                                    <rect key="frame" x="16" y="72.5" width="343" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MK-Ab-La5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="49" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEg-ul-Pta">
-                                                            <rect key="frame" x="65" y="0.0" width="280" height="20.5"/>
+                                                            <rect key="frame" x="63" y="0.0" width="280" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="280" id="aWJ-eF-s6L"/>
                                                             </constraints>
@@ -1948,16 +1950,16 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Za-KY-yTY">
-                                                    <rect key="frame" x="15" y="31.5" width="345" height="20.5"/>
+                                                    <rect key="frame" x="16" y="31.5" width="343" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9t-NU-Gmr">
-                                                            <rect key="frame" x="0.0" y="0.0" width="57" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="55" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FO1-x3-JqC">
-                                                            <rect key="frame" x="65" y="0.0" width="280" height="20.5"/>
+                                                            <rect key="frame" x="63" y="0.0" width="280" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="280" id="k6G-qP-c4z"/>
                                                             </constraints>
@@ -1993,14 +1995,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YIY-aU-doA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="b3k-K7-LkM" firstAttribute="top" secondItem="YIY-aU-doA" secondAttribute="top" id="7ng-Nd-6Th"/>
                             <constraint firstItem="b3k-K7-LkM" firstAttribute="bottom" secondItem="YIY-aU-doA" secondAttribute="bottom" id="7uV-Qg-0pd"/>
                             <constraint firstItem="b3k-K7-LkM" firstAttribute="trailing" secondItem="YIY-aU-doA" secondAttribute="trailing" id="7vY-di-cPk"/>
                             <constraint firstItem="b3k-K7-LkM" firstAttribute="leading" secondItem="YIY-aU-doA" secondAttribute="leading" id="D5E-qS-rEi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="YIY-aU-doA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Joined Tours" id="gLH-en-ckY"/>
                     <connections>
@@ -2077,24 +2079,24 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JhX-Pb-jDx">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LikedRouteCell" rowHeight="140" id="Cel-NU-jFT" customClass="LikedRouteTableViewCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="140"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cel-NU-jFT" id="iVo-9Y-MqB">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGx-ow-AgI">
-                                                    <rect key="frame" x="15" y="16" width="345" height="26.5"/>
+                                                    <rect key="frame" x="16" y="16" width="343" height="26.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.39607843139999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jm-sX-7Z7" customClass="CosmosView" customModule="Cosmos">
                                                     <rect key="frame" x="10" y="52.5" width="355" height="30"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="agt-MG-Wc3"/>
                                                     </constraints>
@@ -2152,12 +2154,12 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gl3-OL-DYm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JhX-Pb-jDx" firstAttribute="height" secondItem="O5O-ll-hzr" secondAttribute="height" multiplier="0.86057" id="gjE-xK-YQt"/>
                             <constraint firstItem="JhX-Pb-jDx" firstAttribute="width" secondItem="O5O-ll-hzr" secondAttribute="width" id="t45-nJ-HLn"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gl3-OL-DYm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Liked Routes" id="mQn-cy-IZN"/>
                     <connections>
@@ -2179,24 +2181,24 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VYg-pZ-CFX">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyInformationCell" textLabel="Gkc-zI-52k" detailTextLabel="sdc-Ri-m5P" style="IBUITableViewCellStyleValue1" id="71B-pL-wg4" customClass="MyInformationTableViewCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71B-pL-wg4" id="nIz-VV-2lx">
-                                            <rect key="frame" x="0.0" y="0.0" width="349" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="349.5" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gkc-zI-52k">
-                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="16" y="12" width="33" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sdc-Ri-m5P">
-                                                    <rect key="frame" x="301.5" y="14" width="39.5" height="18"/>
+                                                    <rect key="frame" x="302" y="14" width="39.5" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2212,14 +2214,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YV3-s8-a0z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="YV3-s8-a0z" firstAttribute="trailing" secondItem="VYg-pZ-CFX" secondAttribute="trailing" id="VJZ-HB-c9W"/>
                             <constraint firstItem="VYg-pZ-CFX" firstAttribute="leading" secondItem="YV3-s8-a0z" secondAttribute="leading" id="X7C-gv-iSn"/>
                             <constraint firstItem="YV3-s8-a0z" firstAttribute="bottom" secondItem="VYg-pZ-CFX" secondAttribute="bottom" id="kvk-7d-pMN"/>
                             <constraint firstItem="VYg-pZ-CFX" firstAttribute="top" secondItem="YV3-s8-a0z" secondAttribute="top" id="zKs-B2-Clv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="YV3-s8-a0z"/>
                     </view>
                     <navigationItem key="navigationItem" id="gNA-Gh-Fmn"/>
                     <connections>
@@ -2240,26 +2242,26 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BlZ-fq-qAk" userLabel="Hosted Tours Table View">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HostedTourDetailCell" rowHeight="100" id="SN7-7R-1Dy" userLabel="HostedTourDetailCell" customClass="HostedTourDetailCell" customModule="Cityu_FYP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SN7-7R-1Dy" id="hTs-am-USq">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="W7k-We-qse">
-                                                    <rect key="frame" x="15" y="11" width="345" height="20.5"/>
+                                                    <rect key="frame" x="16" y="11" width="343" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpu-dx-RvP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="43" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajr-vd-vZU">
-                                                            <rect key="frame" x="65" y="0.0" width="280" height="20.5"/>
+                                                            <rect key="frame" x="63" y="0.0" width="280" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="280" id="kCb-ZC-EVK"/>
                                                             </constraints>
@@ -2270,16 +2272,16 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="SDK-YC-peJ">
-                                                    <rect key="frame" x="15" y="52" width="345" height="20.5"/>
+                                                    <rect key="frame" x="16" y="52" width="343" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbg-gC-mW5">
-                                                            <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6q-QO-Z7v">
-                                                            <rect key="frame" x="65" y="0.0" width="280" height="20.5"/>
+                                                            <rect key="frame" x="63" y="0.0" width="280" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="280" id="nAZ-xM-A9h"/>
                                                             </constraints>
@@ -2290,16 +2292,16 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4ks-Cj-mH0">
-                                                    <rect key="frame" x="15" y="72.5" width="345" height="20.5"/>
+                                                    <rect key="frame" x="16" y="72.5" width="343" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOO-3J-CaO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="49" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDz-zh-r1X">
-                                                            <rect key="frame" x="65" y="0.0" width="280" height="20.5"/>
+                                                            <rect key="frame" x="63" y="0.0" width="280" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="280" id="M24-PF-Fw0"/>
                                                             </constraints>
@@ -2310,16 +2312,16 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fJX-Os-SpE">
-                                                    <rect key="frame" x="15" y="31.5" width="345" height="20.5"/>
+                                                    <rect key="frame" x="16" y="31.5" width="343" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8y-AN-UVa">
-                                                            <rect key="frame" x="0.0" y="0.0" width="57" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="55" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNS-xM-897">
-                                                            <rect key="frame" x="65" y="0.0" width="280" height="20.5"/>
+                                                            <rect key="frame" x="63" y="0.0" width="280" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="280" id="QV9-if-s0c"/>
                                                             </constraints>
@@ -2355,14 +2357,14 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LBX-RJ-SzN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BlZ-fq-qAk" firstAttribute="leading" secondItem="LBX-RJ-SzN" secondAttribute="leading" id="8Na-Nd-Ycl"/>
                             <constraint firstItem="BlZ-fq-qAk" firstAttribute="top" secondItem="LBX-RJ-SzN" secondAttribute="top" id="EBj-kf-o5B"/>
                             <constraint firstItem="BlZ-fq-qAk" firstAttribute="trailing" secondItem="LBX-RJ-SzN" secondAttribute="trailing" id="S9L-Gg-Ejl"/>
                             <constraint firstItem="BlZ-fq-qAk" firstAttribute="bottom" secondItem="LBX-RJ-SzN" secondAttribute="bottom" id="rwp-tI-52g"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="LBX-RJ-SzN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hosted Tours" id="Ar1-LJ-RZS"/>
                     <connections>
@@ -2375,11 +2377,25 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
             <point key="canvasLocation" x="2217" y="1410"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="2jm-sX-7Z7">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+        <designable name="Z0p-fA-gsp">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="ebP-M6-tQo"/>
+        <segue reference="Izo-5W-kU4"/>
+        <segue reference="gFo-kB-d6i"/>
+        <segue reference="8Ck-ye-DXM"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Aberdeen-Reservoir-IMAGE-1-nick-KITO" width="500" height="281"/>
         <image name="Aberdeen-Reservoir-IMAGE-1-nick-KITO.jpg" width="500" height="281"/>
         <image name="backgorund_1.png" width="426" height="658"/>
-        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="hiking_route" width="30" height="30"/>
         <image name="hiking_tour" width="30" height="30"/>
         <image name="login_register_button_background.png" width="405" height="73"/>
@@ -2388,11 +2404,32 @@ Close to the Lower Reservoir is Aberdeen Tree Centre, where visitors can learn m
         <image name="textfield_bg.png" width="392" height="84"/>
         <image name="weakness_empty" width="743" height="1068"/>
         <image name="weakness_fill" width="743" height="1068"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ebP-M6-tQo"/>
-        <segue reference="Izo-5W-kU4"/>
-        <segue reference="gFo-kB-d6i"/>
-        <segue reference="8Ck-ye-DXM"/>
-    </inferredMetricsTieBreakers>
 </document>
