@@ -159,8 +159,6 @@ class CreateTourViewController: UIViewController {
             }
             task.resume()
         }
-        
-        
     }
     
     @IBAction func unwindToCreateTourVC(_ sender: UIStoryboardSegue) {

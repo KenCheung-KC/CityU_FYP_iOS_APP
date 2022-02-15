@@ -14,11 +14,15 @@ class HostedToursListViewController: UIViewController, UITableViewDataSource, UI
     
     @IBOutlet weak var hostedToursTableView: UITableView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getHostedTours()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hostedToursTableView.dataSource = self
         hostedToursTableView.delegate = self
-        getHostedTours()
         // Do any additional setup after loading the view.
     }
     
@@ -62,7 +66,7 @@ class HostedToursListViewController: UIViewController, UITableViewDataSource, UI
     
     func getHostedTours() {
         showSpinner(vc: self)
-        
+        self.hostedTours = []
         guard let url = URL(string: "\(baseUrl)/hikingTour/getUserHostedTours/\(user!.id)") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"

@@ -8,7 +8,6 @@
 
 import UIKit
 
-//var aView : UIView?
 var JWT_token: String?
 //var baseUrl: String = "https://powerful-bastion-22979.herokuapp.com" // for heroku server
 var baseUrl: String = "http://localhost:3000"
@@ -43,7 +42,6 @@ extension UIViewController {
     func hideNavigationBar(animated: Bool){
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
-        
     }
     
     func showNavigationBar(animated: Bool) {
@@ -83,7 +81,8 @@ extension DateFormatter {
         
         // 2) Set the current timezone to .current, or America/Chicago.
         //        df.timeZone = .current
-        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+//        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        df.timeZone = TimeZone(identifier: "Europe/London")
         
         // 3) Set the format of the altered date.
         //        df.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -94,7 +93,7 @@ extension DateFormatter {
     
     static let dateAndTimeFormatter: DateFormatter = {
         let df = DateFormatter()
-        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        df.timeZone = TimeZone(identifier: "Europe/London")
         df.dateStyle = .full
         df.timeStyle = .medium
         return df
@@ -102,14 +101,14 @@ extension DateFormatter {
     
     static let dateFormatter: DateFormatter = {
         let df = DateFormatter()
-        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        df.timeZone = TimeZone(identifier: "Europe/London")
         df.dateStyle = .full
         return df
     }()
     
     static let timeFormatter: DateFormatter = {
         let df = DateFormatter()
-        df.timeZone = TimeZone(identifier: "Asia/Hong_Kong")
+        df.timeZone = TimeZone(identifier: "Europe/London")
         df.timeStyle = .short
         return df
     }()
